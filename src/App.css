@@ -9,12 +9,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(150deg, #FFBBCC 65%, #FFEECC 30%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +34,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes App-background-image {
+  from {
+    background: -webkit-linear-gradient(120deg, #FFEECC 50%, #FFBBCC 50%);
+    transition: 1s ease-out;
+  } to {
+    background: -webkit-linear-gradient(120deg, #FFEECC 50%, #FFEECC 50%);
+    transition: 1s ease-out;
   }
 }
