@@ -7,11 +7,16 @@ import './App.css';
 function App() {
   return (
     <div className="App App-header">
-      <div className="App-navtab">
+      <header className="App-navtab">
         <Router>
               <Navbar/>
           </Router>
+      </header>
+      <div className="App-content">
+        
       </div>
+      <footer>
+      </footer>
     </div>
   );
 }
