@@ -1,0 +1,15 @@
+.Navbar-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    height: 1in;
+}
+@media (min-width: 500px) {
+    .Navbar-icon a {
+      color: black !important;
+    }
+}
+@media (min-width: 1000px) {
+    .Navbar-icon a {
+      color: red !important;
+    }
+}
