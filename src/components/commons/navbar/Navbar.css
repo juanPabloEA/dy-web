@@ -7,8 +7,8 @@
 @media (max-width: 500px) {
     .Navbar-container .Navbar-icon {
         display: inline-flex;
-        flex-grow:3;
-        justify-content: center; 
+        flex-grow:2;
+        justify-content: left;
     }
     .Navbar-container .Navbar-icon a {
         display: flex;
@@ -17,24 +17,20 @@
         border-radius: 20%;
         margin: 5px;
     }
-    .Navbar-container .Navbar-picture{
+    .Navbar-container .Navbar-options{
         display: inline-flex;
-        flex-grow:3;
+        flex-grow: 1;
         justify-content: center; 
     }
-    .Navbar-container .Navbar-picture a {
+    .Navbar-container .Navbar-options a {
         display: flex;
-    }
-    .Navbar-container .Navbar-picture a img {
-        border-radius: 20%;
-        margin: 5px;
     }
 }    
 @media (min-width: 1000px) {
     .Navbar-container .Navbar-icon {
         display: inline-flex;
         flex-grow:3;
-        justify-content: center;
+        justify-content: left;
     }
     .Navbar-container .Navbar-icon a {
         display: flex;
@@ -43,16 +39,12 @@
         border-radius: 20%;
         margin: 5px;
     }
-    .Navbar-container .Navbar-picture{
+    .Navbar-container .Navbar-options {
         display: inline-flex;
-        flex-grow:3;
-        justify-content: center;
+        flex-grow:6;
+        justify-content: right;
     }
-    .Navbar-container .Navbar-picture a {
+    .Navbar-container .Navbar-options a {
         display: flex;
-    }
-    .Navbar-container .Navbar-picture a img {
-        border-radius: 20%;
-        margin: 5px;
     }
 }
