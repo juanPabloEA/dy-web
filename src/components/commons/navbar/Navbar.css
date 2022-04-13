@@ -3,13 +3,28 @@
     border-radius: 10px;
     height: 1in;
 }
-@media (min-width: 500px) {
-    .Navbar-icon a {
-      color: black !important;
+@media (max-width: 500px) {
+    .Navbar-container .Navbar-icon a {
+      display: flex;
+      justify-content: center;
+    }
+    .Navbar-container .Navbar-icon a img {
+        height: 20%;
+        width: 20%;
+        border-radius: 20%;
+        margin-top: 8px;
     }
 }
 @media (min-width: 1000px) {
-    .Navbar-icon a {
-      color: red !important;
+    .Navbar-container .Navbar-icon a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .Navbar-container .Navbar-icon a img {
+        height: 4%;
+        width: 4%;
+        border-radius: 20%;
+        margin-top: 8px;
     }
 }
