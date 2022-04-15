@@ -2,7 +2,9 @@ import React from 'react';
 import {  Link } from "react-router-dom";
 import logo from "./../../../assets/img/logo.jpeg";
 import './Navbar.css';
-const Navbar= () =>{
+import { FaAlignRight } from "react-icons/fa";
+
+const Navbar = () => {
   return (
     <div className="Navbar-container">
       <div className="Navbar-icon">
@@ -12,11 +14,11 @@ const Navbar= () =>{
       </div>
       <div className="Navbar-options">
         <Link to="/">
-          galley
+          <FaAlignRight/>
         </Link>
       </div>
- 
     </div>
   );
 }
+
 export default Navbar;

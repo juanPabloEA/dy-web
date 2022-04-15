@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Navbar from "./components/commons/navbar/Navbar"
+import Footer from './components/commons/footer/Footer'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {  Link } from "react-router-dom";
 import './App.css';
@@ -16,6 +17,7 @@ function App() {
         
       </div>
       <footer>
+          <Footer/>
       </footer>
     </div>
   );
