@@ -10,14 +10,10 @@ const Home = () => {
       </div>
       <div className="home-options">
           <div className="gallery-option">
-            <button>
-              Galleria
-            </button>
+            <button type="button" class="gallery">Galeria</button> 
           </div>
           <div className="button-option">
-            <button>
-              Ordenar
-            </button>
+           <button type="button" class="pedido">Pedido</button>
           </div>
       </div>
     </>
