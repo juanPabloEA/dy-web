@@ -1,0 +1,21 @@
+.home-picture {
+  justify-self: center;
+}
+.home-picture img {
+     height: 400px;
+    width: 350px;
+}
+
+.home-options {
+  display: flex;
+}
+
+.home-options .gallery-option {
+  flex-grow: 2;
+  justify-content: center;
+}
+
+.home-options .button-option {
+  flex-grow: 2;
+  justify-content: center;
+}
