@@ -8,6 +8,8 @@
 
 .home-options {
   display: flex;
+  padding: 10px;
+  padding-top: 50px;
 }
 
 .home-options .gallery-option {
@@ -40,7 +42,7 @@ button {
 
 .gallery::after {
   content: "";
-  background-color: #FFEECC;
+  background-color: #FFDDCC;
   width: 100%;
   z-index: -1;
   position: absolute;
