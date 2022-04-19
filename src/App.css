@@ -21,6 +21,11 @@ footer {
   height: 100%;
 }
 
+.App-content {
+  display: inline-grid;
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }

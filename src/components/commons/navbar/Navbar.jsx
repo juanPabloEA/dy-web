@@ -5,6 +5,9 @@ import './Navbar.css';
 import { FaAlignRight } from "react-icons/fa";
 
 const Navbar = () => {
+  function activeMenu(e) {
+    document.querySelector('.phone').classList.toggle('active')
+  }
   return (
     <div className="Navbar-container">
       <div className="Navbar-icon">
@@ -13,7 +16,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="Navbar-options">
-        <Link to="/">
+        <Link to="/" onClick={activeMenu}>
           <FaAlignRight/>
         </Link>
       </div>

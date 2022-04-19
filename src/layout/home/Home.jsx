@@ -13,7 +13,7 @@ const Home = () => {
             <button type="button" className="gallery">Galeria</button> 
           </div>
           <div className="button-option">
-           <button type="button" className="pedido">Pedido</button>
+            <button type="button" className="pedido">Pedido</button>
           </div>
       </div>
     </>
