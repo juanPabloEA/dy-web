@@ -1,8 +1,8 @@
 import Navbar from "./components/commons/navbar/Navbar"
-import Footer from './components/commons/footer/Footer'
 import Sidebar from "./components/commons/sidebar/Sidebar"
+import Contact from "./layout/contact/Contact"
+import {Routes, Route } from "react-router-dom";
 import Home from './layout/home/Home'
-import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -10,12 +10,13 @@ function App() {
     <div className="App App-header phone">
       <Sidebar />
       <header className="App-navtab">
-        <Router>
           <Navbar />
-        </Router>
       </header>
-      <div className="App-content">
-        <Home />
+      <div className="App-content"> 
+        <Routes>
+          <Route index element={<Home />}/>
+          <Route path="contact" element={<Contact />}/>
+        </Routes>    
       </div>
     </div>
   );

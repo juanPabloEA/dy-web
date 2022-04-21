@@ -1,5 +1,6 @@
 import React from 'react';
 import homePicture from '../../assets/img/home-image.jpeg'
+import {Link} from "react-router-dom"
 import './Home.css';
 
 /**
@@ -17,7 +18,9 @@ const Home = () => {
       </div>
       <div className="home-options">
           <div className="gallery-option">
-            <button type="button" className="gallery">Galeria</button> 
+            <Link to="contact">
+              <button type="button" className="gallery">Contacto</button> 
+            </Link>
           </div>
           <div className="button-option">
             <button type="button" className="pedido">Pedido</button>

@@ -17,9 +17,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="Navbar-options">
-        <Link to="/" onClick={activeMenu}>
-          <FaAlignRight/>
-        </Link>
+          <FaAlignRight onClick={activeMenu}/>
       </div>
     </div>
   );
