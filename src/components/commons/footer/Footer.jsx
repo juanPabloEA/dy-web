@@ -2,6 +2,12 @@ import React from 'react';
 import './Footer.css';
 import {FaInstagram, FaFacebook, FaWhatsapp} from "react-icons/fa";
 
+/**
+ * 
+ * TODO:
+ * - redesign footer.
+ */
+
 const Footer=() => {
 	return (
 		<>

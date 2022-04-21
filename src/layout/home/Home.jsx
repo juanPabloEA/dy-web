@@ -2,6 +2,13 @@ import React from 'react';
 import homePicture from '../../assets/img/home-image.jpeg'
 import './Home.css';
 
+/**
+ * 
+ * TODO:
+ *  - editar imagen.
+ *  - modificar la posicion de los botones.
+ * 
+ */
 const Home = () => {
   return (
     <>

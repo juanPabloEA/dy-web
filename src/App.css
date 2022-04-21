@@ -1,10 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {}
 
-@media (prefers-reduced-motion: no-preference) {
-  
-}
 body {
   background: linear-gradient(160deg, #FFBBCC 65%, #FFEECC 30%);
   min-height: 100vh;
+  height: 100%;
   font-size: calc(10px + 2vmin);
 }
 
@@ -18,12 +17,16 @@ footer {
 
 .App-navtab {
   padding: 10px;
+}
+
+#root {
   height: 100%;
 }
 
 .App-content {
   display: inline-grid;
   width: 100%;
+  height: 100%;
 }
 
 .App-link {
@@ -34,15 +37,19 @@ footer {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 @keyframes App-background-image {
   from {
     background: -webkit-linear-gradient(120deg, #FFEECC 50%, #FFBBCC 50%);
     transition: 1s ease-out;
-  } to {
+  }
+
+  to {
     background: -webkit-linear-gradient(120deg, #FFEECC 50%, #FFEECC 50%);
     transition: 1s ease-out;
   }
