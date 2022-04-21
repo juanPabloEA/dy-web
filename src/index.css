@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFEECC;
   background-image: url("./assets/img/background.png");
+  animation: breath 8s linear infinite;
   background-size: cover;
 }
 html {
@@ -16,3 +17,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@keyframes breath {
+  0%   {  background-size: 102% auto; }
+  50%  {  background-size: 105% auto; }
+  100% {  background-size: 102% auto; }      
+ }
