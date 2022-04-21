@@ -4,7 +4,6 @@
 }
 .menu {
   align-items: center;
-  background-color: #303235;
   clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%);
   color: #f2f2f2;
   flex-direction: column;

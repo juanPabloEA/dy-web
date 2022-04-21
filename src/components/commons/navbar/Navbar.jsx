@@ -1,5 +1,6 @@
 import React from 'react';
 import {  Link } from "react-router-dom";
+import Sidebar from "./../sidebar/Sidebar"
 import logo from "./../../../assets/img/logo.jpeg";
 import './Navbar.css';
 import { FaAlignRight } from "react-icons/fa";
