@@ -1,5 +1,5 @@
 import React from 'react';
-import homePicture from '../../assets/img/home-image.jpeg'
+import homePicture from '../../assets/img/image-home.png'
 import {Link} from "react-router-dom"
 import './Home.css';
 

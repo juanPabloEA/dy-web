@@ -2,19 +2,19 @@
 
   .home-picture {
     justify-self: center;
-    margin-top: 50px;
-    height: 300px;
+    margin-top: 10px;
+    height: 100%;
   }
 
   .home-picture img {
-    height: 400px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
   }
 
   .home-options {
     display: flex;
+    padding-top: 100px;
     padding: 10px;
-    padding-top: 150px;
   }
 
   .home-options .gallery-option {
@@ -23,7 +23,6 @@
   }
 
   .home-options .button-option {
-    flex-grow: 2;
     justify-content: center;
   }
 
