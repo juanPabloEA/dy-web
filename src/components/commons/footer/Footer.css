@@ -4,6 +4,10 @@
 		display: flex;
 	}
 
+	.dev-information {
+		padding: 10px;
+	}
+
 	.content-footer .social-media-title {
 		display: grid;
 		flex-grow: 2;

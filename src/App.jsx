@@ -1,8 +1,9 @@
-import Navbar from "./components/commons/navbar/Navbar"
-import Sidebar from "./components/commons/sidebar/Sidebar"
-import Contact from "./layout/contact/Contact"
+import Navbar from "./components/commons/navbar/Navbar";
+import Sidebar from "./components/commons/sidebar/Sidebar";
+import Contact from "./layout/contact/Contact";
+import Footer from "./components/commons/footer/Footer";
 import {Routes, Route } from "react-router-dom";
-import Home from './layout/home/Home'
+import Home from './layout/home/Home';
 import './App.css';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           <Route path="contact" element={<Contact />}/>
         </Routes>    
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
