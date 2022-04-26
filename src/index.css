@@ -5,9 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFEECC;
-  background-image: url("./assets/img/background.png");
-  animation: breath 8s linear infinite;
+  background: #FFEECC;
   background-size: cover;
 }
 html {
