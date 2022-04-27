@@ -19,6 +19,7 @@
     }
     .Navbar-container .Navbar-options{
         display: inline-flex;
+        color: #FFAACC;
         flex-grow: 1;
         justify-content: flex-end;
         padding: 15px;
