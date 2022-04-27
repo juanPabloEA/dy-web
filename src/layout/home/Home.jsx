@@ -14,13 +14,12 @@ const Home = () => {
   return (
     <>
       <div className="home-picture">
-        <div className="card">
+        <div className="card animate__animated animate__fadeInDown">
           <div className="title">Tortas</div>
           <img src={homePicture}></img>
         </div>
-        
       </div>
-      <div className="home-options">
+      <div className="home-options animate__animated animate__fadeIn">
           <div className="gallery-option">
             <Link to="contact">
               <button type="button" className="gallery">Contacto</button> 
