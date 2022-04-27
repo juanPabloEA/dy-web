@@ -14,7 +14,11 @@ const Home = () => {
   return (
     <>
       <div className="home-picture">
-        <img src={homePicture}></img>
+        <div className="card">
+          <div className="title">Tortas</div>
+          <img src={homePicture}></img>
+        </div>
+        
       </div>
       <div className="home-options">
           <div className="gallery-option">

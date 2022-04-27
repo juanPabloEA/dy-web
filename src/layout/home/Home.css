@@ -1,14 +1,30 @@
-@media (max-width: 500px) {
+  @media (max-width: 500px) {
 
   .home-picture {
     justify-self: center;
-    margin-top: 10px;
     height: 100%;
   }
 
+  .home-picture .card {
+    background: rgba(255,170,204, 0.9);
+    height: 70%;
+    width: 99%;
+    padding-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .home-picture .card .title {
+    text-justify: distribute;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
   .home-picture img {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
+    margin: 10px;
   }
 
   .home-options {
