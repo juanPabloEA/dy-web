@@ -1,31 +1,18 @@
-
 @media (max-width: 500px) {
-	.content-footer {
-		display: grid;
-	}
-
-	.dev-information {
+	.interaction {
+		background-color: rgba(255, 255, 255, 1);
+		border-radius: 20px;
 		padding: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
-	.content-footer .social-media-title {
+	.interaction {
 		display: grid;
-		flex-grow: 2;
-		justify-content: center;
-		margin: 10px;
-		border-right: 4px solid #FFAACC;
-		border-radius: 40px 40px 40px 40px;
-	}
-
-	.content-footer .social-media-links {
-		display: grid;
-		flex-grow: 2;
-		justify-content: center;
-		margin: 10px;
-	}
-
-	.content-footer .social-media div {
-		display: row;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		align-items: center;
 	}
 }
-
