@@ -13,6 +13,29 @@
 		grid-template-rows: 1fr;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
+	}
+
+	.interaction div {
+		display: grid;
 		align-items: center;
+		justify-content: center;
+		color: #FFAACC;
+		font-size: 25px;
+	}
+
+	.home-opt {
+		border-right: 1px solid;
+	}
+
+	.gallery-opt {
+		border-right: 1px solid;
+	}
+
+	.contact-opt {
+		border-right: 1px solid;
+	}
+
+	.buy-opt {
+		
 	}
 }

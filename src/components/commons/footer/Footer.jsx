@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import {FaInstagram, FaFacebook, FaWhatsapp} from "react-icons/fa";
+import {FaHome, FaRegImage, FaRegIdCard, FaShoppingBasket} from "react-icons/fa";
 
 /**
  * 
@@ -14,16 +14,16 @@ const Footer=() => {
 		<>
 			<div className="interaction">
 				<div className="home-opt">
-					home
+					<FaHome/>
 				</div>
 				<div className="gallery-opt">
-					gellery
+					<FaRegImage/>
 				</div>
 				<div className="contact-opt">
-					contact
+					<FaRegIdCard/>
 				</div>
 				<div className="buy-opt">
-					buy
+					<FaShoppingBasket/>
 				</div>
 			</div>
 		</>
