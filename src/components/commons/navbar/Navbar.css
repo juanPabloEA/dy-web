@@ -17,7 +17,7 @@
         border-radius: 20%;
         margin: 5px;
     }
-    .Navbar-container .Navbar-options{
+    .Navbar-container .Navbar-options {
         display: inline-flex;
         color: #FFAACC;
         flex-grow: 1;
@@ -29,6 +29,9 @@
         align-items: center;
         font-size: 30px;
         z-index: 1;
+    }
+    .active .Navbar-container .Navbar-options {
+        color: white;
     }
 }    
 @media (min-width: 1000px) {

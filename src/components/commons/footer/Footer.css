@@ -24,6 +24,14 @@
 		font-size: 25px;
 	}
 
+	.interaction div a {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		color: #FFAACC;
+		font-size: 25px;
+	}
+
 	.home-opt {
 		border-right: 1px solid;
 	}
