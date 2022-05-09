@@ -19,11 +19,6 @@ const Footer=() => {
 						<FaHome/>
 					</Link>
 				</div>
-				<div className="gallery-opt">
-					<Link to="gallery">
-						<FaRegImage/>
-					</Link>
-				</div>
 				<div className="contact-opt">
 					<Link to="contact">
 						<FaRegIdCard/>

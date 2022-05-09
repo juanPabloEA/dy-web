@@ -1,6 +1,7 @@
 import React from 'react';
 import homePicture from '../../assets/img/image-home.png'
 import { Link } from "react-router-dom"
+import Gallery from './../gallery/Gallery';
 import './Home.css';
 
 /**
@@ -23,6 +24,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Gallery/>
+      <Gallery/>
     </>
   );
 }
