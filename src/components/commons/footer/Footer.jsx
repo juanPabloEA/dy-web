@@ -20,7 +20,9 @@ const Footer=() => {
 					</Link>
 				</div>
 				<div className="gallery-opt">
-					<FaRegImage/>
+					<Link to="gallery">
+						<FaRegImage/>
+					</Link>
 				</div>
 				<div className="contact-opt">
 					<Link to="contact">

@@ -1,6 +1,7 @@
 import Navbar from "./components/commons/navbar/Navbar";
 import Sidebar from "./components/commons/sidebar/Sidebar";
 import Contact from "./layout/contact/Contact";
+import Gallery from "./layout/gallery/Gallery";
 import Footer from "./components/commons/footer/Footer";
 import {Routes, Route } from "react-router-dom";
 import Home from './layout/home/Home';
@@ -17,6 +18,8 @@ function App() {
         <Routes>
           <Route index element={<Home />}/>
           <Route path="contact" element={<Contact />}/>
+          <Route path="gallery" element={<Gallery />}/>
+          <Route path="basket" element={<Contact />}/>
         </Routes>    
       </div>
       <footer>

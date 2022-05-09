@@ -1,0 +1,15 @@
+@media (max-width: 500px) {
+    .product-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+		box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 15%);	
+    }
+    .product-card {
+        background-color: white;
+        border: 1px solid #FFAACC;
+        border-radius: 5px;
+    }
+}
