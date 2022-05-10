@@ -5,6 +5,7 @@ import Gallery from "./layout/gallery/Gallery";
 import Footer from "./components/commons/footer/Footer";
 import {Routes, Route } from "react-router-dom";
 import Home from './layout/home/Home';
+import Shop from "./layout/shop/Shop";
 import './App.css';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path="contact" element={<Contact />}/>
           <Route path="gallery" element={<Gallery />}/>
-          <Route path="basket" element={<Contact />}/>
+          <Route path="shop" element={<Shop />}/>
         </Routes>    
       </div>
       <footer>

@@ -25,7 +25,9 @@ const Footer=() => {
 					</Link>
 				</div>
 				<div className="buy-opt">
-					<FaShoppingBasket/>
+					<Link to="shop">
+						<FaShoppingBasket/>
+					</Link>
 				</div>
 			</div>
 		</>
