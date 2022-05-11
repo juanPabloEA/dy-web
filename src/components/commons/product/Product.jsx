@@ -1,15 +1,14 @@
 import React from 'react';
-import homePicture from '../../../assets/img/home-image.jpeg'
 import './Product.css';
 
-const Product = (data) => {
+const Product = ({homePicture, title}) => {
     return (
         <div className="product-card">
             <div className="head">
                 <img src={homePicture}></img>
             </div>
             <div className="content">
-                <div className="titulo">Tradicional</div>
+                <div className="titulo">{title}</div>
             </div>
         </div>
     );
