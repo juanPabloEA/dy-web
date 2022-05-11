@@ -1,11 +1,11 @@
 import React from 'react';
 import './Product.css';
 
-const Product = ({homePicture, title}) => {
+const Product = ({picture, title}) => {
     return (
         <div className="product-card">
             <div className="head">
-                <img src={homePicture}></img>
+                <img src={picture}></img>
             </div>
             <div className="content">
                 <div className="titulo">{title}</div>

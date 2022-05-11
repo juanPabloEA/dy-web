@@ -1,13 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from "react-router-dom";
-import {FaHome, FaRegImage, FaRegIdCard, FaShoppingBasket} from "react-icons/fa";
+import {FaHome, FaWhatsapp, FaShoppingBasket} from "react-icons/fa";
 
-/**
- * 
- * TODO:
- * - redesign footer.
- */
 const year = new Date().getFullYear();
 
 const Footer=() => {
@@ -21,7 +16,7 @@ const Footer=() => {
 				</div>
 				<div className="contact-opt">
 					<Link to="contact">
-						<FaRegIdCard/>
+						<FaWhatsapp/>
 					</Link>
 				</div>
 				<div className="buy-opt">
