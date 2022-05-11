@@ -18,10 +18,19 @@
   }
 
   .home-picture .card .title {
-    text-justify: distribute;
+    text-align: center;
     color: white;
     font-size: xx-large;
     font-weight: bold;
+    padding: 13px;
+  }
+
+  .home-picture .card .body {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    text-justify: distribute;
+    padding: 5px;
   }
 
   .home-picture .card img {

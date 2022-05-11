@@ -4,13 +4,6 @@ import { Link } from "react-router-dom"
 import Gallery from './../gallery/Gallery';
 import './Home.css';
 
-/**
- * 
- * TODO:
- *  - editar imagen.
- *  - modificar la posicion de los botones.
- * 
- */
 const Home = () => {
   return (
     <>
@@ -20,7 +13,8 @@ const Home = () => {
             <img src={homePicture}></img>
           </div>
           <div className="description animate__animated animate__fadeInDown">
-            <div className="title">Tortas</div>
+            <div className="title">Tortas Caseras</div>
+            <div className="body">Elaboramos tortas con un sabor casero y diseño unico para cada momento.</div>
           </div>
         </div>
       </div>
