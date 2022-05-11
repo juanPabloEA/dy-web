@@ -31,7 +31,8 @@
         height: 150%;
         width: 100%;
         object-fit: cover;
-        border-radius: 15px
+        border-radius: 15px;
+        opacity: 0.8;
     }
     .product-card .content .titulo {
         z-index: 1;
@@ -50,6 +51,7 @@
         grid-row-gap: 0px;
         position: relative;
         height: 100%;
+        border-radius: 15px;
     }
 
 }
