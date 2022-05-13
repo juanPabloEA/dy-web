@@ -6,6 +6,11 @@ import figuresPicture from '../../assets/img/categories/figures.jpeg';
 import eventsPicture from '../../assets/img/categories/eventos_03.jpeg';
 import varPicture from '../../assets/img/categories/traditional.jpeg';
 
+window.onbeforeunload = function(e){
+    console.log('bye bye');
+    document.getElementsByClassName('myDiv').item(0).className = 'animate__bounceOut';
+}
+
 const Gallery = () => {
     return (
         <>

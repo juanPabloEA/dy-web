@@ -3,77 +3,60 @@
 }
 
 .item-a {
-  padding: 20px
+  padding: 20px;
+  width: auto;
+}
+
+.contact-page {
+  padding: 20px;
+}
+
+.contact-page .head {
+  justify-content: center;
+  font-size: xx-large;
+  padding: 20px;
+}
+
+.contact-page .head .title {
+  font-size: 70px;
+  letter-spacing: 1.5px;
+  color: #bc318f;
+}
+
+.contact-page .head .sub-title {
+  font-size: 30px;
+  color: #d9317a;
+}
+
+.contact-page .links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* Simple button styling -- No animation */
-.btn-whatsapp {
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 50px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(255, 287, 204, 0);
-}
-
-.btn-whatsapp::after {
-  content: "";
+.btn.btn-whatsapp {
   background-color: rgba(65, 193, 67, 0.8);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
+  color: white;
 }
 
 /* Simple button styling -- No animation */
-.btn-instagram {
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 50px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(255, 287, 204, 0);
-}
-
-.btn-instagram::after {
-  content: "";
+.btn.btn-instagram {
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
+  color: white;
 }
 
 /* Simple button styling -- No animation */
-.btn-facebook {
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 50px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(255, 287, 204, 0);
-}
-
-.btn-facebook::after {
-  content: "";
+.btn.btn-facebook {
   background-color: rgba(25, 119, 242, 0.8);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
+  color: white;
 }
