@@ -11,7 +11,7 @@ const Gallery = () => {
         <>
             <div className="Gallery">
                 <div className="traditional animate__animated animate__zoomIn">
-                    <Product picture={traditionalPicture} title="Tradicional" />
+                    <Product picture={traditionalPicture} title="Clasicas" />
                 </div>
                 <div className="fondant animate__animated animate__zoomIn">
                     <Product picture={figuresPicture} title="Figuras de fondant" />
@@ -22,7 +22,7 @@ const Gallery = () => {
                     <Product picture={eventsPicture} title="Eventos" />
                 </div>
                 <div className="fondant animate__animated animate__zoomIn">
-                    <Product picture={varPicture} title="Personalizadas" />
+                    <Product picture={varPicture} title="A tú gusto" />
                 </div>
             </div>
         </>

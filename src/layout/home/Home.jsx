@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <div className="home-picture">
-        <div className="card">
+        <div className="card animate__animated animate__zoomIn">
           <div className="image animate__animated animate__fadeInDown">
             <img src={homePicture}></img>
           </div>

@@ -26,7 +26,8 @@
     padding: 10px;
   }
 
-  .home-picture .card .body {
+  .home-picture .card .description .body {
+    font-family: 'Roboto Flex', sans-serif;
     text-align: center;
     color: white;
     font-weight: lighter;
