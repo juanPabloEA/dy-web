@@ -4,8 +4,13 @@ import './Shop.css';
 const Shop = () => {
     return (
         <>
-            <div>
-                hello shop
+            <div className="Shop">
+                <div className="options">
+                    hello shop
+                </div>
+                <div className="img">
+                    hello shop
+                </div>
             </div>
         </>
     );

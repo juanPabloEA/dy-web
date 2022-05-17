@@ -10,16 +10,16 @@ const Gallery = () => {
     return (
         <>
             <div className="Gallery">
-                <div className="card animate__animated animate__zoomIn">
+                <div className="card animate__animated animate__fadeInUp">
                     <Product picture={traditionalPicture} title="Clasicas" />
                 </div>
-                <div className="card animate__animated animate__zoomIn">
+                <div className="card animate__animated animate__fadeInUp">
                     <Product picture={figuresPicture} title="Figuras de fondant" />
                 </div>
-                <div className="card animate__animated animate__zoomIn">
+                <div className="card animate__animated animate__fadeInUp">
                     <Product picture={eventsPicture} title="Eventos" />
                 </div>
-                <div className="card animate__animated animate__zoomIn">
+                <div className="card animate__animated animate__fadeInUp">
                     <Product picture={varPicture} title="A tú gusto" />
                 </div>
             </div>

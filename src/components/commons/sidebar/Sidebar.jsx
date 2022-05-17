@@ -4,7 +4,7 @@ import './Sidebar.css';
 const Sidebar = () => {
   return (
     <>
-        <div className="menu">
+        <div className="Sidebar menu">
         <div className="options">
           <div className="option selected">Home</div>
           <div className="option">About</div>

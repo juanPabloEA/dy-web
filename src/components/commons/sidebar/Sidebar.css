@@ -1,5 +1,5 @@
 
-.menu {
+.Sidebar.menu {
   align-items: center;
   clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%);
   color: #f2f2f2;
@@ -16,12 +16,12 @@
   display: flex;
 }
 
-.active .menu {
+.active .Sidebar.menu {
   background-color: #FFAACC;
   clip-path: polygon(101% -1%, 101% 101%, -1% 101%, -1% -1%);
 }
 
-.options {
+.Sidebar .options {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -30,16 +30,16 @@
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.option {
+.Sidebar .option {
   cursor: pointer;
   margin: 8px 0;
 }
 
-.option.selected {
+.Sidebar .option.selected {
   color: #a02f56;
 }
 
-.active .options {
+.active .Sidebar .options {
   transform: scale(1);
 }
 
