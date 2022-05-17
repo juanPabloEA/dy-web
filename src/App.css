@@ -5,6 +5,7 @@ body {
   font-size: calc(10px + 2vmin);
   margin: 0;
   font-family: 'Grand Hotel', cursive;
+  padding-bottom: 60px;
 }
 
 footer {

@@ -15,13 +15,15 @@
         background-color: white;
         border: 2px solid #FFAACC;
         border-radius: 15px;
-        height: 250px;
-        width: 150px;
+        height: 350px;
+        width: 350px;
     }
     .product-card .content {
-        background-color: #FFAACC;
         height: 100%;
-        border-radius: 40% 40% 15px 15px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
         z-index: 1;
     }
 
@@ -29,20 +31,20 @@
         display: grid;
         z-index: 0;
         position: absolute;
-        height: 150%;
+        height: 200%;
         width: 100%;
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: 13px;
         opacity: 0.8;
     }
     .product-card .content .title {
         z-index: 1;
         display: grid;
-        align-items: center;
-		justify-content: center;
+        font-size: xx-large;
+        align-items: flex-end;
+		justify-content: left;
         color: white;
         height: 100%;
-        font-size: xx-large;
         font-weight: 500;
     }
 
@@ -52,9 +54,9 @@
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        position: relative;
-        height: 100%;
         border-radius: 15px;
+        height: 100%;
+        position: relative;
     }
 
 }
