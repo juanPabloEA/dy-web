@@ -1,5 +1,5 @@
-/* Customize the label (the InpRadio) */
-.InpRadio {
+/* Customize the label (the InpSelect) */
+.InpSelect {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -12,12 +12,12 @@
     user-select: none;
   }
 
-  .InpRadio .sub-title {
+  .InpSelect .sub-title {
     font-size: 18px;
   }
   
   /* Hide the browser's default radio button */
-  .InpRadio input {
+  .InpSelect input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -32,17 +32,17 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: white;
+    background-color: rgba(255, 238, 204, 1);
     border-radius: 50%;
   }
   
   /* On mouse-over, add a grey background color */
-  .InpRadio:hover input ~ .checkmark {
+  .InpSelect:hover input ~ .checkmark {
     background-color: rgba(255, 238, 204, 1);
   }
   
   /* When the radio button is checked, add a blue background */
-  .InpRadio input:checked ~ .checkmark {
+  .InpSelect input:checked ~ .checkmark {
     background-color: #bc318f;
   }
   
@@ -54,12 +54,12 @@
   }
   
   /* Show the indicator (dot/circle) when checked */
-  .InpRadio input:checked ~ .checkmark:after {
+  .InpSelect input:checked ~ .checkmark:after {
     display: block;
   }
   
   /* Style the indicator (dot/circle) */
-  .InpRadio .checkmark:after {
+  .InpSelect .checkmark:after {
     top: 9px;
     left: 9px;
     width: 8px;

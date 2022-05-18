@@ -5,36 +5,34 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const Shop = () => {
     return (
-        <>
-            <div className="Shop">
-                <div className="title">
-                    Bizcocho
-                </div>
-                <div className="content">
-                    <InpRadio name="bis" value="One" check="false"/>
-                    <InpRadio name="bis" value="Two" check="false"/>
-                    <InpRadio name="bis" value="Three" check="true"/>
-                    <InpRadio name="bis" value="Four" check="false"/>
-                </div>
-                <div className="actions">
-                    <div className="back">
-                        <div className="text">
-                            <FaAngleLeft />
-                            Atrás
-                        </div>
+        <div className="Shop">
+            <div className="title">
+                Bizcocho
+            </div>
+            <div className="content">
+                <InpRadio name="bis" value="One" subValue="One description" check="false" />
+                <InpRadio name="bis" value="Two" subValue="Two description" check="false" />
+                <InpRadio name="bis" value="Three" subValue="Three description" check="true" />
+                <InpRadio name="bis" value="Four" subValue="Four description" check="false" />
+            </div>
+            <div className="actions">
+                <div className="back">
+                    <div className="text">
+                        <FaAngleLeft />
+                        Atrás
                     </div>
-                    <div className="page">
-                        1/5
-                    </div>
-                    <div className="next">
-                        <div className="text">
-                            Siguiente
-                            <FaAngleRight />
-                        </div>
+                </div>
+                <div className="page">
+                    1/5
+                </div>
+                <div className="next">
+                    <div className="text">
+                        Siguiente
+                        <FaAngleRight />
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

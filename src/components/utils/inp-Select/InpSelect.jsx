@@ -1,10 +1,10 @@
 import React from 'react';
-import './InpRadio.css';
+import './InpSelect.css';
 
-const InpRadio = ({name, value, subValue,check}) => {
+const InpSelect = ({name, value, subValue,check}) => {
     let checked = check == 'true';
     return (
-        <div className="InpRadio">
+        <div className="InpSelect">
             {value} <div className="sub-title">{subValue}</div>
             <input type="radio" name={name} value={value} checked={checked}/>
             <span className="checkmark"></span>
@@ -12,4 +12,4 @@ const InpRadio = ({name, value, subValue,check}) => {
     );
 }
 
-export default InpRadio;
+export default InpSelect;

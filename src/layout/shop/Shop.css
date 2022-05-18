@@ -36,7 +36,12 @@
     display: grid;
     justify-content: end;
     align-items: flex-end;
-    margin: auto;
+}
+
+.Shop .actions .back {
+    display: grid;
+    justify-content: start;
+    align-items: flex-start;
 }
 
 .Shop .content {
