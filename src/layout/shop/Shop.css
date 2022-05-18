@@ -38,3 +38,7 @@
     align-items: flex-end;
     margin: auto;
 }
+
+.Shop .content {
+    padding: 20px;
+}
