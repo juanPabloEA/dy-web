@@ -11,14 +11,14 @@ const Contact = () => {
                     <div className="title">Contactanos</div>
                     <div className="sub-title">Si deseas ver nuestros trabajos no dudes en entrar en nuestras redes sociales</div>
                 </div>
-                <div className="links animate__animated animate__zoomIn">
-                    <div className="item-a">
+                <div className="links">
+                    <div className="item-a animate__animated animate__pulse">
                         <a className="btn btn-whatsapp"> <FaWhatsapp /> </a>
                     </div>
-                    <div className="item-a">
+                    <div className="item-a animate__animated animate__pulse">
                         <a className="btn btn-facebook"><FaFacebook /></a>
                     </div>
-                    <div className="item-a">
+                    <div className="item-a animate__animated animate__pulse">
                         <a className="btn btn-instagram"> <FaInstagram /></a>
                     </div>
                 </div>
