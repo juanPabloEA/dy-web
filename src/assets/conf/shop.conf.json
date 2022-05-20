@@ -1,3 +1,78 @@
-{
-    
+{   
+    "cake": {
+        "id": "1", 
+        "title": "Bizcocho",
+        "subtitle": "Selecciona un bizcocho",
+        "content": {
+            "choose": 1,
+            "options": [{
+                "id": 1,
+                "title": "Vainilla",
+                "subtitle": ""
+            }, {
+                "id": 2,
+                "title": "Chocolate",
+                "subtitle": ""
+            }, {
+                "id": 3,
+                "title": "Amapola",
+                "subtitle": ""
+            }, {
+                "id": 4,
+                "title": "Zanahoria",
+                "subtitle": ""
+            }, {
+                "id": 5,
+                "title": "Merengue",
+                "subtitle": ""
+            }, {
+                "id": 6,
+                "title": "Chocolate - Vainilla",
+                "subtitle": ""
+            } ,{
+                "id": 7,
+                "title": "Panqueque naranaja",
+                "subtitle": ""
+            }, {
+                "id": 8,
+                "title": "Panqueque Chocolate",
+                "subtitle": ""
+            }
+        ]
+        } 
+    },
+    "cover": {
+        "id": "2",
+        "title": "Cobertura",
+        "subtitle": "Selecciona una de nuestras coberturas",
+        "content": {
+            "choose": 1,
+            "options": [{
+                "id": "",
+                "title": "",
+                "subtitle": ""
+            }, {
+                "id": "",
+                "title": "",
+                "subtitle": ""
+            }]
+        } 
+    },
+    "filled": {
+        "id": "3",
+        "title": "Relleno",
+        "subtitle": "Selecciona 2 o 3 rellenos",
+        "content": {
+            "choose": 3,
+            "options": [{
+                "id": "",
+                "title": "",
+                "subtitle": ""
+            }, {
+                "id": "",
+                "title": "",
+                "subtitle": ""
+            }]
+        } 
+    }
 }
