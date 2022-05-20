@@ -6,8 +6,8 @@ const InpSelect = ({name, value, subValue,check}) => {
     return (
         <div className="InpSelect">
             {value} <div className="sub-title">{subValue}</div>
-            <input type="radio" name={name} value={value} checked={checked}/>
-            <span className="checkmark"></span>
+            <input type="checkbox" name={name} value={value} checked={checked} />
+            <span class="checkmark"></span>
         </div>
     );
 }

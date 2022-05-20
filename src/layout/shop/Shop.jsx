@@ -1,6 +1,7 @@
 import React from 'react';
 import './Shop.css';
 import InpRadio from '../../components/utils/inp-radio/InpRadio';
+import InpSelect from '../../components/utils/inp-select/InpSelect';
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const Shop = () => {
@@ -10,10 +11,10 @@ const Shop = () => {
                 Bizcocho
             </div>
             <div className="content">
-                <InpRadio name="bis" value="One" subValue="One description" check="false" />
-                <InpRadio name="bis" value="Two" subValue="Two description" check="false" />
-                <InpRadio name="bis" value="Three" subValue="Three description" check="true" />
-                <InpRadio name="bis" value="Four" subValue="Four description" check="false" />
+                <InpSelect name="bis" value="One" subValue="One description" check="false" />
+                <InpSelect name="bis" value="Two" subValue="Two description" check="false" />
+                <InpSelect name="bis" value="Three" subValue="Three description" check="true" />
+                <InpSelect name="bis" value="Four" subValue="Four description" check="false" />
             </div>
             <div className="actions">
                 <div className="back">
