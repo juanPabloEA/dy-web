@@ -4,7 +4,7 @@ import InpRadio from '../../components/utils/inp-radio/InpRadio';
 import InpSelect from '../../components/utils/inp-select/InpSelect';
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import shopConf from "../../assets/conf/shop.conf.json";
-
+import Options from "./content/options/Options.jsx"
 
 
 export default class Shop extends React.Component {
@@ -38,13 +38,13 @@ export default class Shop extends React.Component {
              options: currentOptions[0]}))
     }
     
-    getContentByPage(){
+    getContentByCurrentPage(){
         console.log("this.state.options.id", typeof this.state.options.id) 
         switch(this.state.options.id) {
             case 1:
             case 2:
             case 3:
-                return <InpSelect name="bis" value="Three" subValue="One description" check="false" />
+                return <Options opt={this.state.options}/>
             default:
                 return  <div>non page!</div>
         }
@@ -57,7 +57,7 @@ export default class Shop extends React.Component {
                 {this.state.options?.title}
             </div>
             <div className="content">
-                {this.getContentByPage()} 
+                {this.getContentByCurrentPage()} 
 
             </div>
             <div className="actions">
