@@ -1,134 +1,176 @@
-{   
-    "cake": [{
-        "id": "1", 
-        "title": "Bizcocho",
-        "subtitle": "Selecciona un bizcocho",
-        "content": {
-            "choose": 1,
-            "options": [{
-                "id": 1,
-                "title": "Vainilla",
-                "subtitle": ""
-            }, {
-                "id": 2,
-                "title": "Chocolate",
-                "subtitle": ""
-            }, {
-                "id": 3,
-                "title": "Amapola",
-                "subtitle": ""
-            }, {
-                "id": 4,
-                "title": "Zanahoria",
-                "subtitle": ""
-            }, {
-                "id": 5,
-                "title": "Merengue",
-                "subtitle": ""
-            }, {
-                "id": 6,
-                "title": "Chocolate - Vainilla",
-                "subtitle": ""
-            } ,{
-                "id": 7,
-                "title": "Panqueque naranaja",
-                "subtitle": ""
-            }, {
-                "id": 8,
-                "title": "Panqueque Chocolate",
-                "subtitle": ""
+{
+    "shop": [
+        {
+            "id": "1",
+            "title": "Bizcocho",
+            "subtitle": "Selecciona un bizcocho",
+            "content": {
+                "choose": 1,
+                "options": [
+                    {
+                        "id": 1,
+                        "title": "Vainilla",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 2,
+                        "title": "Chocolate",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 3,
+                        "title": "Amapola",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 4,
+                        "title": "Zanahoria",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 5,
+                        "title": "Merengue",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 6,
+                        "title": "Chocolate - Vainilla",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 7,
+                        "title": "Panqueque naranaja",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 8,
+                        "title": "Panqueque Chocolate",
+                        "subtitle": ""
+                    }
+                ]
             }
-        ]
-        } 
-    },
-    {
-        "id": "2",
-        "title": "Cobertura",
-        "subtitle": "Selecciona una de nuestras coberturas",
-        "content": {
-            "choose": 1,
-            "options": [{
-                "id": 1,
-                "title": "crema",
-                "subtitle": ""
-            }, {
-                "id": 2,
-                "title": "merengue",
-                "subtitle": ""
-            }, {
-                "id": 3,
-                "title": "ganache de chocolate",
-                "subtitle": ""
-            }, {
-                "id": 4,
-                "title": "ganache de chocolate",
-                "subtitle": ""
-            }, {
-                "id": 5,
-                "title": "butter cream",
-                "subtitle": ""
-            }]
-        } 
-    },
-    {
-        "id": "3",
-        "title": "Relleno",
-        "subtitle": "Selecciona 2 o 3 rellenos",
-        "content": {
-            "choose": 3,
-            "options": [{
-                "id": 1,
-                "title": "frambuesa",
-                "subtitle": ""
-            }, {
-                "id": 2,
-                "title": "frutilla",
-                "subtitle": ""
-            }, {
-                "id": 3,
-                "title": "frutos rojos",
-                "subtitle": ""
-            }, {
-                "id": 4,
-                "title": "durazno",
-                "subtitle": ""
-            }, {
-                "id": 5,
-                "title": "piña",
-                "subtitle": ""
-            }, {
-                "id": 6,
-                "title": "crema naranja",
-                "subtitle": ""
-            } ,{
-                "id": 8,
-                "title": "crema pastelera",
-                "subtitle": ""
-            },{
-                "id": 9,
-                "title": "crema pastelera chocolate",
-                "subtitle": ""
-            },{
-                "id": 10,
-                "title": "lúcuma",
-                "subtitle": ""
-            },{
-                "id": 11,
-                "title": "manjar",
-                "subtitle": ""
-            },{
-                "id": 12,
-                "title": "manjar nuez",
-                "subtitle": ""
-            },{
-                "id": 13,
-                "title": "moka",
-                "subtitle": ""
-            },{
-                "id": 14,
-                "title": "tres leches",
-                "subtitle": ""
-            }]
-        } 
-    }]
+        },
+        {
+            "id": "2",
+            "title": "Cobertura",
+            "subtitle": "Selecciona una de nuestras coberturas",
+            "content": {
+                "choose": 1,
+                "options": [
+                    {
+                        "id": 1,
+                        "title": "crema",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 2,
+                        "title": "merengue",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 3,
+                        "title": "ganache de chocolate",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 4,
+                        "title": "ganache de chocolate",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 5,
+                        "title": "butter cream",
+                        "subtitle": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "3",
+            "title": "Relleno",
+            "subtitle": "Selecciona 2 o 3 rellenos",
+            "content": {
+                "choose": 3,
+                "options": [
+                    {
+                        "id": 1,
+                        "title": "frambuesa",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 2,
+                        "title": "frutilla",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 3,
+                        "title": "frutos rojos",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 4,
+                        "title": "durazno",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 5,
+                        "title": "piña",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 6,
+                        "title": "crema naranja",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 8,
+                        "title": "crema pastelera",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 9,
+                        "title": "crema pastelera chocolate",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 10,
+                        "title": "lúcuma",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 11,
+                        "title": "manjar",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 12,
+                        "title": "manjar nuez",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 13,
+                        "title": "moka",
+                        "subtitle": ""
+                    },
+                    {
+                        "id": 14,
+                        "title": "tres leches",
+                        "subtitle": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "title": "Tu información",
+            "subtitle": "Selecciona un bizcocho",
+            "content": {}
+        },
+        {
+            "id": "5",
+            "title": "Añadenos a tus redes",
+            "subtitle": "Selecciona un bizcocho",
+            "content": {}
+        }
+    ]
 }
