@@ -4,9 +4,10 @@ import './Options.css'
 export default class Options extends React.Component {
     constructor(props) {
         super(props);
-        this.state = props.opt;
+        this.state = props;
+        console.log(opt);
     }
     render(){
-        return (<div>hello options {this.props.opt.id}</div>)
+        return (<div>hello options {this.state.id}</div>)
     }
 }
