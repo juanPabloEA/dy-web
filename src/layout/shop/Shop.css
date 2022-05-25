@@ -38,10 +38,19 @@
     align-items: flex-end;
 }
 
+.Shop .actions .next[disabled] {
+    opacity: 0.5;
+}
+
 .Shop .actions .back {
     display: grid;
     justify-content: start;
     align-items: flex-start;
+}
+
+
+.Shop .actions .back[disabled] {
+    opacity: 0.5;
 }
 
 .Shop .content {

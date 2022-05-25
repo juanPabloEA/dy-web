@@ -1,6 +1,6 @@
 {   
     "cake": [{
-        "id": "0", 
+        "id": "1", 
         "title": "Bizcocho",
         "subtitle": "Selecciona un bizcocho",
         "content": {
@@ -42,7 +42,7 @@
         } 
     },
     {
-        "id": "1",
+        "id": "2",
         "title": "Cobertura",
         "subtitle": "Selecciona una de nuestras coberturas",
         "content": {
@@ -71,7 +71,7 @@
         } 
     },
     {
-        "id": "2",
+        "id": "3",
         "title": "Relleno",
         "subtitle": "Selecciona 2 o 3 rellenos",
         "content": {

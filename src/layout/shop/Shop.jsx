@@ -11,22 +11,29 @@ export default class Shop extends React.Component {
     constructor(props) {
         super(props);
         let currentOptions = shopConf.cake.filter(shopconf => shopconf.id == 1);
-        this.state = {pages: 5, options: currentOptions[0], currentPage: 1 };
-        this.setShopOptionByCurrentPage = this.setShopOptionByCurrentPage.bind(this);
-        this.nextPage = this.nextPage.bind(this);
-        this.previusPage = this.previusPage.bind(this);
+        this.state = {
+            pages: 5, 
+            options: currentOptions[0],
+            currentPage: 1,
+            minPage: true,
+            maxPage: false
+        };
     }
 
     nextPage(){
-        console.log("click nextState", this.state.currentPage);
+        console.info("nextPage", this.state.currentPage);
         this.state.currentPage = this.state.currentPage += 1;
     }
 
     previusPage(){
-        console.log("click prevState", this.state.currentPage);
+        console.log("previusPage", this.state.currentPage);
         this.state.currentPage = this.state.currentPage -= 1;
     }
 
+    configMaxAndMinPage() {
+        this.state.minPage = this.state.currentPage <= 1;
+        this.state.maxPage = this.state.currentPage >= this.state.pages;
+    }
     setShopOptionByCurrentPage() {
         let currentOptions = shopConf.cake.filter(shopconf => shopconf.id == this.state.currentPage);
         this.setState(prevState => ({
@@ -45,8 +52,9 @@ export default class Shop extends React.Component {
                 <InpSelect name="bis" value="Four" subValue="Four description" check="false" />
             </div>
             <div className="actions">
-                <div className="back">
-                    <div className="text" onClick={ () => {this.previusPage(); this.setShopOptionByCurrentPage()}}>
+                <div className="back" disabled={this.state.minPage}>
+                    <div className="text" 
+                         onClick={ () => {if(!this.state.minPage){this.previusPage(); this.setShopOptionByCurrentPage(); this.configMaxAndMinPage()}}}>
                         <FaAngleLeft />
                         Atrás
                     </div>
@@ -54,8 +62,9 @@ export default class Shop extends React.Component {
                 <div className="page">
                     {this.state.currentPage}/{this.state.pages}
                 </div>
-                <div className="next">
-                    <div className="text" onClick={() => {this.nextPage(); this.setShopOptionByCurrentPage()}}>
+                <div className="next" disabled={this.state.maxPage}>
+                    <div className="text"
+                         onClick={() => {if(!this.state.maxPage){this.nextPage(); this.setShopOptionByCurrentPage(); this.configMaxAndMinPage()}}}>
                         Siguiente
                         <FaAngleRight />
                     </div>
