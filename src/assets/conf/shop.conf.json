@@ -1,7 +1,7 @@
 {
     "shop": [
         {
-            "id": "1",
+            "id": 1,
             "title": "Bizcocho",
             "subtitle": "Selecciona un bizcocho",
             "content": {
@@ -51,7 +51,7 @@
             }
         },
         {
-            "id": "2",
+            "id": 2,
             "title": "Cobertura",
             "subtitle": "Selecciona una de nuestras coberturas",
             "content": {
@@ -86,7 +86,7 @@
             }
         },
         {
-            "id": "3",
+            "id": 3,
             "title": "Relleno",
             "subtitle": "Selecciona 2 o 3 rellenos",
             "content": {
@@ -161,13 +161,13 @@
             }
         },
         {
-            "id": "4",
+            "id": 4,
             "title": "Tu información",
             "subtitle": "Selecciona un bizcocho",
             "content": {}
         },
         {
-            "id": "5",
+            "id": 5,
             "title": "Añadenos a tus redes",
             "subtitle": "Selecciona un bizcocho",
             "content": {}

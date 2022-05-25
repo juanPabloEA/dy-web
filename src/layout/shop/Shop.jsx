@@ -10,7 +10,7 @@ import shopConf from "../../assets/conf/shop.conf.json";
 export default class Shop extends React.Component {
     constructor(props) {
         super(props);
-        let currentOptions = shopConf.cake.filter(shopconf => shopconf.id == 1);
+        let currentOptions = shopConf.shop.filter(shopconf => shopconf.id === 1);
         this.state = {
             pages: 5, 
             options: currentOptions[0],
@@ -21,12 +21,10 @@ export default class Shop extends React.Component {
     }
 
     nextPage(){
-        console.info("nextPage", this.state.currentPage);
         this.state.currentPage = this.state.currentPage += 1;
     }
 
     previusPage(){
-        console.log("previusPage", this.state.currentPage);
         this.state.currentPage = this.state.currentPage -= 1;
     }
 
@@ -35,9 +33,22 @@ export default class Shop extends React.Component {
         this.state.maxPage = this.state.currentPage >= this.state.pages;
     }
     setShopOptionByCurrentPage() {
-        let currentOptions = shopConf.cake.filter(shopconf => shopconf.id == this.state.currentPage);
+        let currentOptions = shopConf.shop.filter(shopconf => shopconf.id === this.state.currentPage);
         this.setState(prevState => ({
              options: currentOptions[0]}))
+    }
+    
+    getContentByPage(){
+        console.log("this.state.options.id", typeof this.state.options.id) 
+        switch(this.state.options.id) {
+            case 1:
+            case 2:
+            case 3:
+                return <InpSelect name="bis" value="Three" subValue="One description" check="false" />
+            default:
+                return  <div>non page!</div>
+        }
+        
     }
     render() { 
         return (
@@ -46,10 +57,8 @@ export default class Shop extends React.Component {
                 {this.state.options?.title}
             </div>
             <div className="content">
-                <InpSelect name="bis" value="One" subValue="One description" check="false" />
-                <InpSelect name="bis" value="Two" subValue="Two description" check="false" />
-                <InpSelect name="bis" value="Three" subValue="Three description" check="true" />
-                <InpSelect name="bis" value="Four" subValue="Four description" check="false" />
+                {this.getContentByPage()} 
+
             </div>
             <div className="actions">
                 <div className="back" disabled={this.state.minPage}>

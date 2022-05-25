@@ -1,11 +1,12 @@
 .Navbar-container {
+    margin: 15px; 
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     height: 1in;
     display: flex;
     box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 15%);
 }
-@media (max-width: 800px) {
+@media (max-width: 8000px) {
     .Navbar-container .Navbar-icon {
         display: inline-flex;
         flex-grow:2;
@@ -34,26 +35,4 @@
     .active .Navbar-container .Navbar-options {
         color: white;
     }
-}    
-@media (min-width: 1000px) {
-    .Navbar-container .Navbar-icon {
-        display: inline-flex;
-        flex-grow:3;
-        justify-content: left;
-    }
-    .Navbar-container .Navbar-icon a {
-        display: flex;
-    }
-    .Navbar-container .Navbar-icon a img {
-        border-radius: 20%;
-        margin: 5px;
-    }
-    .Navbar-container .Navbar-options {
-        display: inline-flex;
-        flex-grow:6;
-        justify-content: right;
-    }
-    .Navbar-container .Navbar-options a {
-        display: flex;
-    }
-}
+} 

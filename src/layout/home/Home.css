@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 8000px) {
 
   .home {
     display: grid;
@@ -10,6 +10,8 @@
   }
 
   .home-picture .card {
+    max-width: 350px;
+    max-height: 210px;
     background: rgba(255, 170, 204, 1);
     border-radius: 15px;
     display: grid;
@@ -36,6 +38,7 @@
   }
 
   .home-picture .card img {
+    max-height: 220px;
     height: 100%;
     width: 90%;
     margin: 10px;

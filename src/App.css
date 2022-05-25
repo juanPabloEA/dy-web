@@ -6,6 +6,8 @@ body {
   margin: 0;
   font-family: 'Grand Hotel', cursive;
   height: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
 .App {
@@ -16,14 +18,15 @@ footer {
   position: fixed;
   bottom: 2%;
   width: 100%;
+  max-width: 400px;
   z-index: 3;
 }
 
 .App-navtab {
   z-index: 3;
   position: fixed;
-  width: 95%;
-  padding: 3%;
+  width: 100%;
+  max-width: 400px;
 }
 
 #root {
