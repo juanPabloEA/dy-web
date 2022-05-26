@@ -12,7 +12,7 @@ export default class Shop extends React.Component {
         super(props);
         let currentOptions = shopConf.shop.filter(shopconf => shopconf.id === 1);
         this.state = {
-            pages: 5, 
+            pages: shopConf.shop.length, 
             options: currentOptions[0],
             currentPage: 1,
             minPage: true,
@@ -42,9 +42,18 @@ export default class Shop extends React.Component {
         console.log("this.state.options.id", typeof this.state.options.id) 
         switch(this.state.options.id) {
             case 1:
+                return <Options 
+                    key={this.state.options.id} 
+                    opt={this.state.options}/>
             case 2:
+                return <Options 
+                    key={this.state.options.id} 
+                    opt={this.state.options}/>
+
             case 3:
-                return <Options opt={this.state.options}/>
+                return <Options 
+                    key={this.state.options.id} 
+                    opt={this.state.options}/>
             default:
                 return  <div>non page!</div>
         }
