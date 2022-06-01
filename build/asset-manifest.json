@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bfbc66f3.css",
+    "main.js": "/static/js/main.69653b14.js",
+    "static/media/image-home.png": "/static/media/image-home.94d7a0718738b27d9f96.png",
+    "static/media/traditional.jpeg": "/static/media/traditional.6101721330b2dc719cc4.jpeg",
+    "static/media/eventos_03.jpeg": "/static/media/eventos_03.fc082b2d3aa761c35579.jpeg",
+    "static/media/figures.jpeg": "/static/media/figures.711b4be84ac8caaaf8df.jpeg",
+    "static/media/fondant-02.jpeg": "/static/media/fondant-02.65d8c046dfdaecf07a09.jpeg",
+    "static/media/logo.jpeg": "/static/media/logo.082dd98aa2bede6a593f.jpeg",
+    "index.html": "/index.html",
+    "main.bfbc66f3.css.map": "/static/css/main.bfbc66f3.css.map",
+    "main.69653b14.js.map": "/static/js/main.69653b14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfbc66f3.css",
+    "static/js/main.69653b14.js"
+  ]
+}

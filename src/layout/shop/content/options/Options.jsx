@@ -7,15 +7,19 @@ export default class Options extends React.Component {
     }
     getOptionList() {
         return this.props?.opt?.content?.options?.map(option => {
-            option.status = false;
+            option.status = true;
             return <InputSelect
                 key={option.id}
                 name={option.title} 
                 value={option.id}
                 checked={option.status}
+                setCkecked={this.passCallBackFuntion.bind(this)}
                 />
         });
+    } 
 
+    passCallBackFuntion(event) {
+        console.log("passCallBackFuntion", event)
     }
 
     render() {
