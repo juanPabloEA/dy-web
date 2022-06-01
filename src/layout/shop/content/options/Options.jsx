@@ -3,18 +3,16 @@ import './Options.css'
 import InputSelect from "../../../../components/utils/inp-select/InpSelect.jsx"
 export default class Options extends React.Component {
     constructor(props) {
-        super(props);
-        console.log(props)
-        this.state = {
-            opt: props.opt
-        }
+        super(props); 
     }
     getOptionList() {
-        return this.state?.opt?.content?.options?.map(option => {
+        return this.props?.opt?.content?.options?.map(option => {
+            option.status = false;
             return <InputSelect
                 key={option.id}
                 name={option.title} 
                 value={option.id}
+                checked={option.status}
                 />
         });
 

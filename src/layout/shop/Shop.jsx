@@ -4,7 +4,7 @@ import InpRadio from '../../components/utils/inp-radio/InpRadio';
 import InpSelect from '../../components/utils/inp-select/InpSelect';
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import shopConf from "../../assets/conf/shop.conf.json";
-import Options from "./content/options/Options.jsx"
+import Content from "./content/Content.jsx"
 
 
 export default class Shop extends React.Component {
@@ -21,7 +21,9 @@ export default class Shop extends React.Component {
     }
 
     nextPage(){
-        this.state.currentPage = this.state.currentPage += 1;
+        let currentPageTemp = this.state.currentPage += 1;
+        this.state.currentPage = currentPageTemp;         
+        this.setState(prevState => ({currentPage: currentPageTemp}));
     }
 
     previusPage(){
@@ -38,27 +40,6 @@ export default class Shop extends React.Component {
              options: currentOptions[0]}))
     }
     
-    getContentByCurrentPage(){
-        console.log("this.state.options.id", typeof this.state.options.id) 
-        switch(this.state.options.id) {
-            case 1:
-                return <Options 
-                    key={this.state.options.id} 
-                    opt={this.state.options}/>
-            case 2:
-                return <Options 
-                    key={this.state.options.id} 
-                    opt={this.state.options}/>
-
-            case 3:
-                return <Options 
-                    key={this.state.options.id} 
-                    opt={this.state.options}/>
-            default:
-                return  <div>non page!</div>
-        }
-        
-    }
     render() { 
         return (
         <div className="Shop">
@@ -66,7 +47,7 @@ export default class Shop extends React.Component {
                 {this.state.options?.title}
             </div>
             <div className="content">
-                {this.getContentByCurrentPage()} 
+                <Content options={this.state.options}/> 
 
             </div>
             <div className="actions">
