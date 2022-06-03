@@ -6,7 +6,7 @@ export const DECREMENTED = "DECREMENTED"
 const incrementAction = createAction(INCREMENTED);
 const decrementedAction =  createAction(DECREMENTED);
 
-const ShopReducer = createReducer({}, (builder) => {
+const shop = createReducer({}, (builder) => {
   builder.addCase(incrementAction, (state, action) => {
     
   })
@@ -14,5 +14,5 @@ const ShopReducer = createReducer({}, (builder) => {
   builder.addCase(decrementedAction, (state, action) => {})
 })
 
-export default ShopReducer;
+export default shop;
 

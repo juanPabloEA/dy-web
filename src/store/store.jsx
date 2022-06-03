@@ -1,13 +1,16 @@
 import { combineReducers } from 'redux'
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore, combineSlicer } from '@reduxjs/toolkit'
 
-import ShopReducer from './shop/ShopReducer.jsx'
+import shop from './shop/ShopReducer.jsx'
+import counter from './shop/ShopStore.jsx'
 
-const State = configureStore({
-    reducer: {
-      shop: ShopReducer,
-      //client: ClientReducer,
-    }
+const reducer = combineSlicer({
+    shop,
+    counter
 })
 
-export default State;
+const store = configureStore({
+    reducer
+})
+
+export default store;
