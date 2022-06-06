@@ -1,17 +1,20 @@
-import { createSlice, configureStore, createReducer, createAction} from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
-export const INCREMENTED = "INCREMENTED"
-export const DECREMENTED = "DECREMENTED"
+export const name = "shop"
 
-const incrementAction = createAction(INCREMENTED);
-const decrementedAction =  createAction(DECREMENTED);
-
-const shop = createReducer({}, (builder) => {
-  builder.addCase(incrementAction, (state, action) => {
-    
-  })
-
-  builder.addCase(decrementedAction, (state, action) => {})
+const shop = createSlice({
+  name: name,
+  initialState: {
+    value: 0
+  },
+  reducer: {
+    incremented: state => {
+      state.value += 1;
+    },
+    decremented: state => {
+      state.value -= 1
+    }
+  }
 })
 
 export default shop;

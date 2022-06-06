@@ -20,8 +20,4 @@ const counter = createSlice({
 })
 
 export const { incremented, decremented } = counter.actions
-const ShopStore = configureStore({
-  reducer: counter.reducer
-})
-
 export default counter; 
