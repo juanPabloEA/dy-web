@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { previusPage, nextPage} from './shop.actions.jsx'
+import { previusPage, nextPage, setMinAndMaxPage} from './shop.actions.jsx'
 import {getShopInitConfig} from '../../api/shop/shop.server.js'
 export const name = "shop"
 
@@ -13,9 +13,11 @@ const shop = createSlice({
   },
   reducers: {
     previuspage: previusPage,
-    nextpage: nextPage}
+    nextpage: nextPage,
+    setminandmaxpage: setMinAndMaxPage
+  }
 })
 
-export const { nextpage, previuspage}  = shop.actions 
+export const { nextpage, previuspage, setminandmaxpage}  = shop.actions 
 export default shop.reducer;
 
