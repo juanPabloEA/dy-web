@@ -1,69 +1,46 @@
 import React from 'react';
 import './Shop.css';
-import InpRadio from '../../components/utils/inp-radio/InpRadio';
-import InpSelect from '../../components/utils/inp-select/InpSelect';
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-import shopConf from "../../assets/conf/shop.conf.json";
 import Content from "./content/Content.jsx"
+import { useSelector,  useDispatch} from 'react-redux'
+import { nextpage, previuspage } from '../../store/shop/shop.slice.jsx'
+import { getShop, getCurrentSelectShop } from '../../store/shop/shop.selector.jsx'
 
 
-export default class Shop extends React.Component {
-    constructor(props) {
-        super(props);
-        let currentOptions = shopConf.shop.filter(shopconf => shopconf.id === 1);
-        this.state = {
-            pages: shopConf.shop.length, 
-            options: currentOptions[0],
-            currentPage: 1,
-            minPage: true,
-            maxPage: false
-        };
-    }
-
-    nextPage(){
-        let currentPageTemp = this.state.currentPage += 1;
-        this.state.currentPage = currentPageTemp;         
-        this.setState(prevState => ({currentPage: currentPageTemp}));
-    }
-
-    previusPage(){
-        this.state.currentPage = this.state.currentPage -= 1;
-    }
-
-    configMaxAndMinPage() {
-        this.state.minPage = this.state.currentPage <= 1;
-        this.state.maxPage = this.state.currentPage >= this.state.pages;
-    }
-    setShopOptionByCurrentPage() {
-        let currentOptions = shopConf.shop.filter(shopconf => shopconf.id === this.state.currentPage);
-        this.setState(prevState => ({
-             options: currentOptions[0]}))
-    }
+export default function Shop() {
+    const dispatch = useDispatch()
+    const shopConf = useSelector(getShop)
+    const currentShopOption = useSelector(getCurrentSelectShop)
     
-    render() { 
-        return (
+    const nextPage = () => {
+        dispatch(nextpage())
+    }
+    const previusPage = () => {
+        dispatch(previuspage())
+    }
+    return (
         <div className="Shop">
             <div className="title">
-                {this.state.options?.title}
+                {currentShopOption?.title}
             </div>
             <div className="content">
-                <Content options={this.state.options}/> 
+                <Content options={currentShopOption}/> 
 
             </div>
             <div className="actions">
-                <div className="back" disabled={this.state.minPage}>
+                <div className="back" disabled={shopConf.minPage}>
                     <div className="text" 
-                         onClick={ () => {if(!this.state.minPage){this.previusPage(); this.setShopOptionByCurrentPage(); this.configMaxAndMinPage()}}}>
+                        onClick={previusPage}>
                         <FaAngleLeft />
                         Atrás
                     </div>
                 </div>
                 <div className="page">
-                    {this.state.currentPage}/{this.state.pages}
+                    {shopConf.currentSelect + 1}/{shopConf.options.length}
                 </div>
-                <div className="next" disabled={this.state.maxPage}>
+                <div className="next" disabled={shopConf.maxPage}>
                     <div className="text"
-                         onClick={() => {if(!this.state.maxPage){this.nextPage(); this.setShopOptionByCurrentPage(); this.configMaxAndMinPage()}}}>
+                        onClick={nextPage}>
                         Siguiente
                         <FaAngleRight />
                     </div>
@@ -71,6 +48,6 @@ export default class Shop extends React.Component {
             </div>
         </div>
     );
-}}
+}
 
 

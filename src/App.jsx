@@ -6,6 +6,7 @@ import Footer from "./components/commons/footer/Footer";
 import {Routes, Route } from "react-router-dom";
 import Home from './layout/home/Home';
 import Shop from "./layout/shop/Shop";
+import ErrorBoundary from "./layout/error/ErrorBoundary.jsx" 
 import './App.css';
 
 function App() {
@@ -15,13 +16,15 @@ function App() {
       <header className="App-navtab">
           <Navbar />
       </header>
-      <div className="App-content"> 
+      <div className="App-content">
+        <ErrorBoundary>
         <Routes>
           <Route index element={<Home />}/>
           <Route path="contact" element={<Contact />}/>
           <Route path="gallery" element={<Gallery />}/>
           <Route path="shop" element={<Shop />}/>
-        </Routes>    
+        </Routes>
+        </ErrorBoundary>
       </div>
       <footer>
         <Footer />

@@ -1,6 +1,5 @@
 import React from 'react';
 import homePicture from '../../assets/img/image-home.png'
-import { Link } from "react-router-dom"
 import Gallery from './../gallery/Gallery';
 import './Home.css';
 
@@ -10,7 +9,7 @@ const Home = () => {
       <div className="home-picture">
         <div className="card animate__animated animate__zoomIn">
           <div className="image animate__animated animate__fadeInDown">
-            <img src={homePicture}></img>
+            <img src={homePicture} alt=""></img>
           </div>
           <div className="description animate__animated animate__fadeInDown">
             <div className="title">Tortas Caseras</div>

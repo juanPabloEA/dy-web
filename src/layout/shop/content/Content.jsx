@@ -2,9 +2,6 @@ import React from 'react'
 import Options from "./options/Options.jsx"
 
 export default class Content extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     getContentByCurrentPage() { 
         switch(this.props.options.id) {

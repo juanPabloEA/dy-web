@@ -13,13 +13,13 @@ const Contact = () => {
                 </div>
                 <div className="links">
                     <div className="item-a animate__animated animate__pulse">
-                        <a className="btn btn-whatsapp"> <FaWhatsapp /> </a>
+                        <a className="btn btn-whatsapp" href="/"> <FaWhatsapp /> </a>
                     </div>
                     <div className="item-a animate__animated animate__pulse">
-                        <a className="btn btn-facebook"><FaFacebook /></a>
+                        <a className="btn btn-facebook" href="/"><FaFacebook /></a>
                     </div>
                     <div className="item-a animate__animated animate__pulse">
-                        <a className="btn btn-instagram"> <FaInstagram /></a>
+                        <a className="btn btn-instagram" href="/"> <FaInstagram /></a>
                     </div>
                 </div>
             </div>

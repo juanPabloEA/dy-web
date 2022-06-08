@@ -3,9 +3,7 @@ import './Footer.css';
 import { Link } from "react-router-dom";
 import {FaHome, FaWhatsapp, FaShoppingBasket} from "react-icons/fa";
 
-const year = new Date().getFullYear();
-
-const Footer=() => {
+const Footer = () => {
 	return (
 		<>
 			<div className="interaction">
