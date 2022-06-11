@@ -6,23 +6,12 @@ export default class Content extends React.Component {
     getContentByCurrentPage() { 
         switch(this.props.options.id) {
             case 1:
-                return <Options 
-                    key={this.props.options.id} 
-                    opt={this.props.options}/>
             case 2:
-                return <Options 
-                    key={this.props.options.id} 
-                    opt={this.props.options}/>
-
             case 3:
-                return <Options 
-                    key={this.props.options.id} 
-                    opt={this.props.options}/>
             case 4:
                 return <Options 
                     key={this.props.options.id} 
-                    opt={this.props.options}/>
- 
+                    opt={this.props.options}/> 
             default:
                 return  <div>non page!</div>
         }
