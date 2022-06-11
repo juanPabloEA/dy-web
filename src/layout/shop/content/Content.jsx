@@ -18,6 +18,11 @@ export default class Content extends React.Component {
                 return <Options 
                     key={this.props.options.id} 
                     opt={this.props.options}/>
+            case 4:
+                return <Options 
+                    key={this.props.options.id} 
+                    opt={this.props.options}/>
+ 
             default:
                 return  <div>non page!</div>
         }

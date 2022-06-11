@@ -11,14 +11,17 @@ export default function Shop() {
     const dispatch = useDispatch()
     const shopConf = useSelector(getShop)
     const currentShopOption = useSelector(getCurrentSelectShop)
+
     const nextPage = () => {
         dispatch(nextpage())
         dispatch(setminandmaxpage())
     }
+   
     const previusPage = () => {
         dispatch(previuspage())
         dispatch(setminandmaxpage())
     }
+   
     return (
         <div className="Shop">
             <div className="title">
