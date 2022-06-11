@@ -3,7 +3,7 @@ import './Options.css'
 import InputSelect from "../../../../components/utils/inp-select/InpSelect.jsx"
 export default class Options extends React.Component {
 
-    getOptionListOpt() {
+    getOptionList() {
         return this.props?.opt?.content?.options?.map(option => {
             return <InputSelect
                 key={option.id}
@@ -13,9 +13,6 @@ export default class Options extends React.Component {
                 setCkecked={this.passCallBackFuntion.bind(this)}
                 />
         });
-    } 
-    getOptionList() {
-        return <h1> hi mark </h1>
     }
 
     passCallBackFuntion(event) {
