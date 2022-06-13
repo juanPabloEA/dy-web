@@ -1,5 +1,5 @@
 import React from 'react'
-import Options from "./options/Options.jsx"
+import CakeOptions from "./cake-options/CakeOptions.jsx"
 
 export default class Content extends React.Component {
 
@@ -9,7 +9,7 @@ export default class Content extends React.Component {
             case 2:
             case 3:
             case 4:
-                return <Options 
+                return <CakeOptions 
                     key={this.props.options.id} 
                     opt={this.props.options}/> 
             default:

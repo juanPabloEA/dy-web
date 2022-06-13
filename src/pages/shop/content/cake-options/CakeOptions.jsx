@@ -1,7 +1,8 @@
 import React from 'react'
-import './Options.css'
+import './CakeOptions.css'
 import InputSelect from "../../../../components/utils/inp-select/InpSelect.jsx"
-export default class Options extends React.Component {
+
+export default class CakeOptions extends React.Component {
 
     getOptionList() {
         return this.props?.opt?.content?.options?.map(option => {
