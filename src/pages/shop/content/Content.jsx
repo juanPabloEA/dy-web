@@ -1,15 +1,38 @@
 import React from 'react'
 import CakeOptions from "./cake-options/CakeOptions.jsx"
 
-export default class Content extends React.Component {
+import {setcakebiz, setcakesize, setcakecover, setcakerelleno} from "../../../store/shop/shop.slice.jsx"
 
+export default class Content extends React.Component {
+    
+    constructor(props) {
+        super(props)
+        this.state = {}
+    }
+    
     getContentByCurrentPage() { 
-        switch(this.props.options.id) {
+            switch(this.props?.options?.id) {
+            case 0:
+                return <CakeOptions
+                    setCakeAction ={setcakesize}
+                    key={this.props.options.id} 
+                    opt={this.props.options}/> 
+
             case 1:
+                return <CakeOptions
+                    setCakeAction ={setcakebiz}
+                    key={this.props.options.id} 
+                    opt={this.props.options}/> 
+
             case 2:
+                return <CakeOptions
+                    setCakeAction ={setcakecover}
+                    key={this.props.options.id} 
+                    opt={this.props.options}/> 
+
             case 3:
-            case 4:
-                return <CakeOptions 
+                return <CakeOptions
+                    setCakeAction ={setcakerelleno}
                     key={this.props.options.id} 
                     opt={this.props.options}/> 
             default:

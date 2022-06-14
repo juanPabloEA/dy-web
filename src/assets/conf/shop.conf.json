@@ -1,11 +1,11 @@
 {
     "shop": [
         {
-            "id": 1,
+            "id": 0,
             "title": "tamaño",
             "subtitle": "Elige el tamaño de tu torta",
             "content": {
-                "choose": 1,
+                
                 "options": [
                     {
                         "id": 1,
@@ -25,11 +25,11 @@
             }
         },
         {
-            "id": 2,
+            "id": 1,
             "title": "Bizcocho",
             "subtitle": "Selecciona un bizcocho",
             "content": {
-                "choose": 1,
+                
                 "options": [
                     {
                         "id": 1,
@@ -75,11 +75,11 @@
             }
         },
         {
-            "id": 3,
+            "id": 2,
             "title": "Cobertura",
             "subtitle": "Selecciona una de nuestras coberturas",
             "content": {
-                "choose": 1,
+                
                 "options": [
                     {
                         "id": 1,
@@ -110,11 +110,11 @@
             }
         },
         {
-            "id": 4,
+            "id": 3,
             "title": "Relleno",
             "subtitle": "Selecciona 2 o 3 rellenos",
             "content": {
-                "choose": 3,
+                
                 "options": [
                     {
                         "id": 1,
@@ -183,18 +183,6 @@
                     }
                 ]
             }
-        },
-        {
-            "id": 5,
-            "title": "Tu información",
-            "subtitle": "Selecciona un bizcocho",
-            "content": {}
-        },
-        {
-            "id": 6,
-            "title": "Añadenos a tus redes",
-            "subtitle": "Selecciona un bizcocho",
-            "content": {}
         }
     ]
 }

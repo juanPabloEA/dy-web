@@ -32,19 +32,19 @@ export default function Shop() {
 
             </div>
             <div className="actions">
-                <div className="back" disabled={shopConf.minPage}>
+                <div className="back" disabled={shopConf.page.minPage}>
                     <div className="text" 
-                        onClick={shopConf.minPage ? undefined : previusPage}>
+                        onClick={shopConf.page.minPage ? undefined : previusPage}>
                         <FaAngleLeft />
                         Atrás
                     </div>
                 </div>
                 <div className="page">
-                    {shopConf.currentSelect + 1}/{shopConf.options.length}
+                    {shopConf.page.currentSelect + 1}/{shopConf.page.number}
                 </div>
-                <div className="next" disabled={shopConf.maxPage}>
+                <div className="next" disabled={shopConf.page.maxPage}>
                     <div className="text"
-                        onClick={shopConf.maxPage ? undefined : nextPage}>
+                        onClick={shopConf.page.maxPage ? undefined : nextPage}>
                         Siguiente
                         <FaAngleRight />
                     </div>
