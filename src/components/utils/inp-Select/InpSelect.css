@@ -10,7 +10,13 @@
     -ms-user-select: none;
     user-select: none;
   }
-  
+ 
+  .InpSelect.disabled {
+    pointer-events: none;
+    opacity: 80%;
+  }
+
+
   /* Hide the browser's default checkbox */
   .InpSelect input {
     position: absolute;
