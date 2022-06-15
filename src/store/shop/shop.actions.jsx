@@ -26,19 +26,12 @@ export const configureDisableOption = (state, params) => {
   }
 }
 
-export const configureEnableOption = (state, params) => { 
-  for (let opt of state.data[state.page.currentSelect].content.options) {
-    opt.disable = false; 
-  }
-}
-
-
 
 // FORMS 
 
 export const setCheckOption = (state, params) => {
  for (let opt of state.data[state.page.currentSelect].content.options) {
-   if (opt.id == params.payload.id) {
+   if (opt.id === Number(params.payload.id)) {
      opt.checked = params.payload.checked
    } 
   }

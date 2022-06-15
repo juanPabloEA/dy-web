@@ -13,7 +13,3 @@ export const getShopData = (state) => {
 export const getCurrentSelectCakeOption = (state) => {
   return state.shop.data[state.shop.page.currentSelect].content.options
 }
-
-export const getCountSelectByCurrentOption = (state) => {
-  return state.shop.data[state.shop.page.currentSelect].content.options.filter(opt => opt.checked).length
-}

@@ -2,14 +2,12 @@ import React from 'react'
 import './CakeOptions.css'
 import {useDispatch, useSelector} from 'react-redux'
 import InputSelect from "../../../../components/utils/inp-select/InpSelect.jsx"
-import { configuredisableoption, setcheckoption, configureenableoption } from "../../../../store/shop/shop.slice.jsx"
-import { getCurrentSelectCakeOption, getCountSelectByCurrentOption } from "../../../../store/shop/shop.selector.jsx"
+import { configuredisableoption, setcheckoption } from "../../../../store/shop/shop.slice.jsx"
+import { getCurrentSelectCakeOption } from "../../../../store/shop/shop.selector.jsx"
 
 export default function CakeOptions(props) {
     const dispatch = useDispatch();
     const currentCakeOptions = useSelector(getCurrentSelectCakeOption)
-    const countSelect = useSelector(getCountSelectByCurrentOption)
-
 
     function getOptionList() {
         return currentCakeOptions.map(option => {
