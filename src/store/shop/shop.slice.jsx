@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { previusPage, nextPage, setMinAndMaxPage, configureDisableOption, setCakeBiz, setCakeSize, setCakeCover, setCakeRelleno} from './shop.actions.jsx'
-import {getCakeInitConfig} from '../../api/shop/cake.server.js'
+import { previusPage, nextPage, setMinAndMaxPage, configureDisableOption, configureEnableOption, setCheckOption} from './shop.actions.jsx'
+import { getCakeInitConfig } from '../../api/shop/cake.server.js'
+
 export const name = "shop"
 
 const shop = createSlice({
@@ -32,18 +33,12 @@ const shop = createSlice({
     nextpage: nextPage,
     setminandmaxpage: setMinAndMaxPage,
     configuredisableoption: configureDisableOption,
-    setcakebiz: setCakeBiz,
-    setcakesize: setCakeSize,
-    setcakecover: setCakeCover,
-    setcakerelleno: setCakeRelleno
+    configureenableoption: configureEnableOption,
+    setcheckoption: setCheckOption
+
   }
   })
 
-export const { configuredisableoption, nextpage, previuspage, setminandmaxpage,  setcakebiz,
-    setcakesize,
-    setcakecover,
-    setcakerelleno
-
-}  = shop.actions 
+export const { configuredisableoption, nextpage, previuspage, setminandmaxpage, setcheckoption, configureenableoption }  = shop.actions 
 export default shop.reducer;
 

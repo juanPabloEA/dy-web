@@ -15,23 +15,32 @@ export const setMinAndMaxPage = (state) => {
 
 // DATA
 
-export const configureDisableOption = (state) => {
+export const configureDisableOption = (state, params) => {
+  const count = state.data[state.page.currentSelect].content.options.filter(opt => opt.checked).length 
   for (let opt of state.data[state.page.currentSelect].content.options) {
-    opt.disable = false 
+    if(count >= params.payload.maxSelect && !opt.checked) {
+      opt.disable = true;
+    } else {
+      opt.disable = false;
+    }
+  }
+}
+
+export const configureEnableOption = (state, params) => { 
+  for (let opt of state.data[state.page.currentSelect].content.options) {
+    opt.disable = false; 
   }
 }
 
 
+
 // FORMS 
 
-export const setCakeSize = (state, params) => {
+export const setCheckOption = (state, params) => {
+ for (let opt of state.data[state.page.currentSelect].content.options) {
+   if (opt.id == params.payload.id) {
+     opt.checked = params.payload.checked
+   } 
+  }
 }
 
-export const setCakeBiz = (state, params) => {
-}
-
-export const setCakeCover = (state, params) => {
-}
-
-export const setCakeRelleno = (state, params) => {
-}
