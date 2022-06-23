@@ -13,3 +13,7 @@ export const getShopData = (state) => {
 export const getCurrentSelectCakeOption = (state) => {
   return state.shop.data[state.shop.page.currentSelect].content.options
 }
+
+export const getUser = (state) => {
+  return state.shop.form.user
+}

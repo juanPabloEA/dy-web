@@ -1,5 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { previusPage, nextPage, setMinAndMaxPage, configureDisableOption, setCheckOption} from './shop.actions.jsx'
+import { NEXT_PAGE,
+  PREVIUS_PAGE,
+  SET_MIN_AND_MAX_PAGE,
+  CONFIGURE_DISABLE_OPTION,
+  SET_CHECK_OPTION,
+  SET_USER,
+  SET_PHONE, 
+  SET_DELIVERY,
+  SET_ADDRESS,
+  SET_COMMENTS, 
+} from './shop.actions.jsx'
 import { getCakeInitConfig } from '../../api/shop/cake.server.js'
 
 export const name = "shop"
@@ -24,20 +34,35 @@ const shop = createSlice({
         phone: "",
         delivery: true, 
         address: "",
-        observation: "",
+        comments: "",
       }
     }
   },
   reducers: {
-    previuspage: previusPage,
-    nextpage: nextPage,
-    setminandmaxpage: setMinAndMaxPage,
-    configuredisableoption: configureDisableOption,
-    setcheckoption: setCheckOption
-
+    nextPage: NEXT_PAGE,
+    previusPage: PREVIUS_PAGE,
+    setMinAndMaxPage: SET_MIN_AND_MAX_PAGE, 
+    configureDisableOption: CONFIGURE_DISABLE_OPTION,
+    setCheckOption: SET_CHECK_OPTION, 
+    setUser: SET_USER,
+    setPhone: SET_PHONE, 
+    setDelivery: SET_DELIVERY,
+    setAddress: SET_ADDRESS,
+    setComments: SET_COMMENTS,
   }
   })
 
-export const { configuredisableoption, nextpage, previuspage, setminandmaxpage, setcheckoption }  = shop.actions 
+export const { configureDisableOption, 
+  nextPage,
+  previusPage,
+  setMinAndMaxPage,
+  setCheckOption,
+  setUser,
+  setPhone,
+  setDelivery,
+  setAddress,
+  setComments,
+}  = shop.actions 
+
 export default shop.reducer;
 
