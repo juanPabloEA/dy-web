@@ -1,5 +1,6 @@
 import React from 'react'
 import CakeOptions from "./cake-options/CakeOptions.jsx"
+import UserInformation from './user-information/UserInformation.jsx'
 
 export default class Content extends React.Component {
     
@@ -21,6 +22,9 @@ export default class Content extends React.Component {
 
             case 3:
                 return <CakeOptions maxSelect={3} opt={this.props.options}/> 
+            
+            case 4:
+                return <UserInformation/>
             default:
                 return  <div>non page!</div>
         }

@@ -7,7 +7,7 @@ export function getCakeInitConfig() {
 
 function mapDisableAndCheckedOptionInContent(shop) {
   for(let opt of shop) {
-    for(let contOpt of opt.content.options) {
+    for(let contOpt of opt?.content?.options) {
       contOpt.disable = false
       contOpt.checked = false 
     } 

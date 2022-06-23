@@ -37,21 +37,21 @@ export const SET_CHECK_OPTION = (state, params) => {
 }
  
 export const SET_USER = (state, params) => {
-  state.form.user = params.payload.name
+  state.form.user.name = params.payload
 }
 
 export const SET_PHONE = (state, params) => {
-  state.form.phone = params.payload.phone
+  state.form.user.phone = params.payload
 } 
 
 export const SET_DELIVERY = (state, params) => {
-  state.form.delivery = params.payload.delivery
+  state.form.user.delivery = params.payload
 }
 
 export const SET_ADDRESS = (state, params) => {
-  state.form.address = params.payload.address
+  state.form.user.address = params.payload
 }
 
 export const SET_COMMENTS = (state, params) => {
-  state.form.comments = params.payload.comments
+  state.form.user.comments = params.payload
 }

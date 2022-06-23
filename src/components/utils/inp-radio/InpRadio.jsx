@@ -1,12 +1,11 @@
 import React from 'react';
 import './InpRadio.css';
 
-const InpRadio = ({name, value, subValue,check}) => {
-    let checked = check == 'true';
+const InpRadio = ({name, value, subValue, handleOnChange}) => {
     return (
         <div className="InpRadio">
             {value} <div className="sub-title">{subValue}</div>
-            <input type="radio" name={name} value={value} checked={checked}/>
+            <input type="radio" name={name} id={value} onChange={handleOnChange}/>
             <span className="checkmark"></span>
         </div>
     );

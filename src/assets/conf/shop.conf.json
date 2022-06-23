@@ -183,6 +183,18 @@
                     }
                 ]
             }
+        }, {
+            "id": 4, 
+            "title": "Informacion",
+            "content": {
+                "options": []
+            }
+        }, {
+            "id": 5,
+            "title": "Contacto",
+            "content": {
+                "options": []
+            } 
         }
-    ]
+]
 }

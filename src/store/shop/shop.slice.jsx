@@ -30,7 +30,7 @@ const shop = createSlice({
     data: getCakeInitConfig(),
     form: {
       user:{
-        name: "",
+        name: "Juan",
         phone: "",
         delivery: true, 
         address: "",

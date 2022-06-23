@@ -12,12 +12,12 @@ export default function Shop() {
     const shopConf = useSelector(getShop)
     const currentShopOption = useSelector(getCurrentSelectShop)
 
-    const _nextPage = () => {
+    const handleNextPage = () => {
         dispatch(nextPage())
         dispatch(setMinAndMaxPage())
     }
    
-    const _previusPage = () => {
+    const handlePreviusPage = () => {
         dispatch(previusPage())
         dispatch(setMinAndMaxPage())
     }
@@ -34,7 +34,7 @@ export default function Shop() {
             <div className="actions">
                 <div className="back" disabled={shopConf.page.minPage}>
                     <div className="text" 
-                        onClick={shopConf.page.minPage ? undefined : _previusPage}>
+                        onClick={shopConf.page.minPage ? undefined : handlePreviusPage}>
                         <FaAngleLeft />
                         Atrás
                     </div>
@@ -44,7 +44,7 @@ export default function Shop() {
                 </div>
                 <div className="next" disabled={shopConf.page.maxPage}>
                     <div className="text"
-                        onClick={shopConf.page.maxPage ? undefined : _nextPage}>
+                        onClick={shopConf.page.maxPage ? undefined : handleNextPage}>
                         Siguiente
                         <FaAngleRight />
                     </div>

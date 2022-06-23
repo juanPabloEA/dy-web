@@ -1,0 +1,12 @@
+.UserForm * {
+    margin: 15px;
+}
+
+.UserForm .InpSelect .checkmark {
+    left: auto;
+    top: -10px;
+}
+
+.UserForm .InpSelect {
+    padding-left: 0px;
+}
