@@ -28,8 +28,7 @@ export default function UserInformation () {
     const handleOnChangeComments = (value) => {
         dispatch(setComments(value.target.value))
     }
-
-    return (
+   return (
         <div className="UserForm">
             <div className="name">
                 <UserName name={user.name} handleOnChange={handleOnChangeName}/>
@@ -40,55 +39,59 @@ export default function UserInformation () {
             <div className="delivery">
                 <UserDelivery delivery={user.delivery} handleOnChange={handleOnChangeDelivery}/>
             </div>
-            <div className="address">
-                <UserAddress address={user.address} handleOnChange={handleOnChangeAddress}/>
-            </div>
+            { user.delivery &&
+                <div className={`address animate__animated ${ user.delivery ? "animate__fadeInDown" : "animate__fadeOutUp" }`} > 
+                    <UserAddress address={user.address} handleOnChange={handleOnChangeAddress}/>
+                </div>
+            }
             <div className="comments">
                 <UserComments comments={user.comments} handleOnChange={handleOnChangeComments}/>
             </div>
         </div>
     ) 
 }
-
 function UserName({name, handleOnChange}) {
     return (
-        <label>
-        Nombre: 
+        <div className="label">
+            <div>Nombre: </div>
             <input type="Text" value={name} onChange={handleOnChange}/>
-        </label>
+        </div>
+       
     )
 }
 
 function UserPhone({phone, handleOnChange}) {
     return (
-        <label>
-        Numero: 
+        <div className="label">
+            <div> Numero: </div> 
             <input type="Text" value={phone} onChange={handleOnChange}/>
-        </label>
+        </div>
+
+       
     )
 }
 
 function UserDelivery({delivery, handleOnChange}) {
     return (
-            <InpSelect name="Delivery" checked={delivery} setChecked={handleOnChange} />
+        <InpSelect name="Delivery:" checked={delivery} setChecked={handleOnChange} />
     )
 }
 
 function UserAddress({address, handleOnChange}) {
     return (
-        <label>
-        Direccion: 
+        <div className="label">
+            <div>Direccion: </div>
             <input type="Text" value={address} onChange={handleOnChange}/>
-        </label>
+        </div> 
+       
     )
 }
 
 function UserComments({comments, handleOnChange}) {
     return (
-       <label>
-        Observaciones: 
-            <input type="Text" value={comments} onChange={handleOnChange}/>
-        </label>
-
+        <div className="label">
+            <div>Observaciones: </div> 
+            <textarea name="textarea" rows="5" cols="70" value={comments} onChange={handleOnChange}/>
+        </div>
     )
 }

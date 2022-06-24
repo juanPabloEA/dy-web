@@ -3,10 +3,34 @@
 }
 
 .UserForm .InpSelect .checkmark {
-    left: auto;
+    left: 80px;
     top: -10px;
 }
 
 .UserForm .InpSelect {
     padding-left: 0px;
+}
+
+.UserForm .label {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+.UserForm .animate__animated.animate__fadeInDown {
+  --animate-duration: 0.4s;
+}
+
+.UserForm .label input, textarea {
+    border-radius: 10px;
+    border: none;
+    font-family: 'Grand Hotel';
+    padding-left: 10px;
+}
+.UserForm .label input:focus-visible, textarea:focus-visible {
+    outline: #bc318f 2px solid;
 }
