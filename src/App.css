@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: 'Grand Hotel', cursive;
   height: 100%;
-  max-width: 400px;
   margin: auto;
 }
 
@@ -31,6 +30,7 @@ footer {
 
 #root {
   height: 100%;
+  max-width: 400px;
 }
 
 .App-content {
