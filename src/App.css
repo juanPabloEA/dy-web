@@ -31,6 +31,7 @@ footer {
 #root {
   height: 100%;
   max-width: 400px;
+  margin: auto;
 }
 
 .App-content {

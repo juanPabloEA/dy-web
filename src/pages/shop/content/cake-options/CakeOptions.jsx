@@ -11,13 +11,14 @@ export default function CakeOptions(props) {
 
     function getOptionList() {
         return currentCakeOptions.map(option => {
+            console.log(option.id)
             return <InputSelect
                 key={option.id}
+                val={option.id}
                 name={option.title} 
-                value={option.id}
                 disable={option.disable}
                 checked={option.checked}
-                setCkecked={passCallBackFuntion}
+                setChecked={passCallBackFuntion}
                 />
         });
     }

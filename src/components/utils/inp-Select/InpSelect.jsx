@@ -2,16 +2,13 @@ import React from 'react';
 import './InpSelect.css';
 
 export default class InpSelect extends React.Component {
-    constructor(props, {setChecked}) {
-        super(props); 
-    }  
-
+    
     render() {
+        console.log(this.props)
          return ( 
              <label className={`InpSelect ${ this.props.disable ? "disabled" : "" }`} > 
                 {this.props.name}
-                <input type="checkbox" id={this.props.value} name={this.props.name}
-                    value={this.props.value} checked={this.props.checked} onChange={this.props?.setChecked}/>
+                <input type="checkbox" id={this.props.val} name={this.props.name} checked={this.props.checked} onChange={this.props.setChecked}/>
                 <span className="checkmark"></span>
             </label>
     );

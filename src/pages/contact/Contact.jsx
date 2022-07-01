@@ -12,13 +12,13 @@ const Contact = () => {
                     <div className="sub-title">Si deseas ver nuestros trabajos no dudes en entrar en nuestras redes sociales</div>
                 </div>
                 <div className="links">
-                    <div className="item-a animate__animated animate__pulse animate__infinite">
+                    <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
                         <a className="btn btn-whatsapp" href="/"> <FaWhatsapp /> </a>
                     </div>
-                    <div className="item-a animate__animated animate__pulse animate__infinite">
+                    <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
                         <a className="btn btn-facebook" href="/"><FaFacebook /></a>
                     </div>
-                    <div className="item-a animate__animated animate__pulse animate__infinite">
+                    <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
                         <a className="btn btn-instagram" href="/"> <FaInstagram /></a>
                     </div>
                 </div>
