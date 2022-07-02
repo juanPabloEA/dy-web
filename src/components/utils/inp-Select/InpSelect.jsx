@@ -4,7 +4,6 @@ import './InpSelect.css';
 export default class InpSelect extends React.Component {
     
     render() {
-        console.log(this.props)
          return ( 
              <label className={`InpSelect ${ this.props.disable ? "disabled" : "" }`} > 
                 {this.props.name}

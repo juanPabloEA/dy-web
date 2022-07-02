@@ -11,7 +11,6 @@ export default function CakeOptions(props) {
 
     function getOptionList() {
         return currentCakeOptions.map(option => {
-            console.log(option.id)
             return <InputSelect
                 key={option.id}
                 val={option.id}

@@ -1,7 +1,7 @@
 import React from 'react'
 import CakeOptions from "./cake-options/CakeOptions.jsx"
 import UserInformation from './user-information/UserInformation.jsx'
-
+import RequestOrderPreview from './request-order-preview/RequestOrderPreview.jsx'
 export default class Content extends React.Component {
     
     constructor(props) {
@@ -25,6 +25,9 @@ export default class Content extends React.Component {
             
             case 4:
                 return <UserInformation/>
+            
+            case 5:
+                return <RequestOrderPreview/>
             default:
                 return  <div>non page!</div>
         }

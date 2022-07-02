@@ -1,10 +1,16 @@
 @media (prefers-reduced-motion: no-preference) {}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
   background-color: rgba(255, 238, 204, 0.6);
-  font-size: calc(10px + 2vmin);
+  font-size: 2vh;
   margin: 0;
-  font-family: 'Grand Hotel', cursive;
+  font-family: 'Patrick Hand', cursive;
   height: 100%;
   margin: auto;
 }
@@ -32,6 +38,7 @@ footer {
   height: 100%;
   max-width: 400px;
   margin: auto;
+  background-repeat: repeat-y;
 }
 
 .App-content {

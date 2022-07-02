@@ -12,8 +12,8 @@ const Home = () => {
             <img src={homePicture} alt=""></img>
           </div>
           <div className="description animate__animated animate__fadeInDown">
-            <div className="title">Tortas Caseras</div>
-            <div className="body">Elaboramos tortas con un sabor casero y diseño unico para cada momento.</div>
+            <div className="title">Delicias de la Yoya</div>
+            <div className="body">Elaboramos tortas caseras con un diseño unico para cada momento.</div>
           </div>
         </div>
       </div>

@@ -89,9 +89,9 @@ function UserAddress({address, handleOnChange}) {
 
 function UserComments({comments, handleOnChange}) {
     return (
-        <div className="label">
+        <div className="label comments">
             <div>Observaciones: </div> 
-            <textarea name="textarea" rows="5" cols="70" value={comments} onChange={handleOnChange}/>
+            <textarea name="textarea" rows="5" cols="140" value={comments} onChange={handleOnChange}/>
         </div>
     )
 }

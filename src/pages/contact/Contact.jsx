@@ -9,17 +9,17 @@ const Contact = () => {
             <div className="contact-page">
                 <div className="head">
                     <div className="title">Contactanos</div>
-                    <div className="sub-title">Si deseas ver nuestros trabajos no dudes en entrar en nuestras redes sociales</div>
+                    <div className="sub-title">Si deseas ver más de nuestro trabajo o contactarte con nosotros accede a nuestras redes sociales</div>
                 </div>
                 <div className="links">
                     <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
-                        <a className="btn btn-whatsapp" href="/"> <FaWhatsapp /> </a>
+                        <a className="btn btn-whatsapp" target="_blank" rel="noreferrer noopener" href="https://wa.link/f1eni6"> <FaWhatsapp /> </a>
                     </div>
                     <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
-                        <a className="btn btn-facebook" href="/"><FaFacebook /></a>
+                        <a className="btn btn-facebook" target="_blank" rel="noreferrer noopener" href="https://es-la.facebook.com/deliciasdelayoya/"><FaFacebook /></a>
                     </div>
                     <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
-                        <a className="btn btn-instagram" href="/"> <FaInstagram /></a>
+                        <a className="btn btn-instagram" target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/deliciasdelayoya/"> <FaInstagram /></a>
                     </div>
                 </div>
             </div>
