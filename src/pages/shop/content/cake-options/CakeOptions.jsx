@@ -1,7 +1,7 @@
 import React from 'react'
 import './CakeOptions.css'
 import {useDispatch, useSelector} from 'react-redux'
-import InputSelect from "../../../../components/utils/inp-select/InpSelect.jsx"
+import InpSelect from "../../../../components/utils/inp-select/InpSelect.jsx"
 import { configureDisableOption, setCheckOption} from "../../../../store/shop/shop.slice.jsx"
 import { getCurrentSelectCakeOption } from "../../../../store/shop/shop.selector.jsx"
 
@@ -11,7 +11,7 @@ export default function CakeOptions(props) {
 
     function getOptionList() {
         return currentCakeOptions.map(option => {
-            return <InputSelect
+            return <InpSelect
                 key={option.id}
                 val={option.id}
                 name={option.title} 
