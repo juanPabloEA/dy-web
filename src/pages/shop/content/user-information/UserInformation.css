@@ -37,7 +37,7 @@
 .UserForm .label input, textarea {
     border-radius: 10px;
     border: none;
-    font-family: 'Grand Hotel';
+    font-size: initial;
     padding-left: 10px;
 }
 .UserForm .label input:focus-visible, textarea:focus-visible {

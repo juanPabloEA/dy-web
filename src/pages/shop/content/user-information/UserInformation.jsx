@@ -54,7 +54,7 @@ function UserName({name, handleOnChange}) {
     return (
         <div className="label">
             <div>Nombre: </div>
-            <input type="Text" value={name} onChange={handleOnChange}/>
+            <input placeholder="Maria Teresa ..." type="Text" value={name} onChange={handleOnChange}/>
         </div>
        
     )
@@ -64,7 +64,7 @@ function UserPhone({phone, handleOnChange}) {
     return (
         <div className="label">
             <div> Numero: </div> 
-            <input type="Text" value={phone} onChange={handleOnChange}/>
+            <input type="Text" placeholder="+56 9 9317 5141" value={phone} onChange={handleOnChange}/>
         </div>
 
        
@@ -73,7 +73,7 @@ function UserPhone({phone, handleOnChange}) {
 
 function UserDelivery({delivery, handleOnChange}) {
     return (
-        <InpSelect name="Delivery:" checked={delivery} setChecked={handleOnChange} />
+        <InpSelect name="Delivery:"  checked={delivery} setChecked={handleOnChange} />
     )
 }
 
@@ -81,7 +81,7 @@ function UserAddress({address, handleOnChange}) {
     return (
         <div className="label">
             <div>Direccion: </div>
-            <input type="Text" value={address} onChange={handleOnChange}/>
+            <input type="text" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" placeholder="Jose Zapiola #1970" value={address} onChange={handleOnChange}/>
         </div> 
        
     )
@@ -91,7 +91,7 @@ function UserComments({comments, handleOnChange}) {
     return (
         <div className="label comments">
             <div>Observaciones: </div> 
-            <textarea name="textarea" rows="5" cols="140" value={comments} onChange={handleOnChange}/>
+            <textarea name="textarea" placeholder='mensaje "Feliz cumpleaños ..." con la tematica de ...' rows="5" cols="140" value={comments} onChange={handleOnChange}/>
         </div>
     )
 }
