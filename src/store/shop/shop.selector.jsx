@@ -20,9 +20,9 @@ export const getUser = (state) => {
 
 export const getCurrentQuotation = (state) => {
   return {
-    size: state.shop.data[0].content.options.filter(data => data.checked),
-    bizcuit: state.shop.data[1].content.options.filter(data => data.checked),
-    cover: state.shop.data[2].content.options.filter(data => data.checked),
+    size: state.shop.data[0].content.options.filter(data => data.checked)[0],
+    bizcuit: state.shop.data[1].content.options.filter(data => data.checked)[0],
+    cover: state.shop.data[2].content.options.filter(data => data.checked)[0],
     filled: state.shop.data[3].content.options.filter(data => data.checked),
     user: state.shop.form.user
   }

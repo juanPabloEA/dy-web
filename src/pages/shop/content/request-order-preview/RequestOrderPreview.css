@@ -1,0 +1,27 @@
+.RequestOrderPreview {
+    text-align: center;
+}
+
+.RequestOrderPreview h2 {
+    color: #bc318f;
+    margin-top: unset;
+}
+
+.RequestOrderPreview h3 {
+    color: #d9317a;
+    margin-bottom: unset;
+}
+
+.RequestOrderPreview .bold-text {
+    font-weight: bold;
+    font-size: x-large;
+    display: contents;
+}
+
+.RequestOrderPreview .contact {
+    margin: 15px;
+}
+
+.RequestOrderPreview .btn {
+    margin-top: 10px;
+}
