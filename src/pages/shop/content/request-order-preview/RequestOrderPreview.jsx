@@ -3,7 +3,7 @@ import "./RequestOrderPreview.css";
 import { useSelector } from 'react-redux';
 
 import { getCurrentQuotation } from '../../../../store/shop/shop.selector';
-import { buildWtspMessageByQuotation } from '../../../../api/shop/shop.message';
+import { buildMsgByQuotation } from '../../../../api/shop/shop.message';
 import { sendMessage } from '../../../../api/whatsapp/whatsapp.send';
 import {  FaWhatsapp } from "react-icons/fa";
 
@@ -17,8 +17,8 @@ export default function RequestOrderPreview() {
     }
 
     function send() {
-        let message = buildWtspMessageByQuotation("hi", "jo");
-        sendMessage("+56993175141",message)
+        let message = buildMsgByQuotation(currentQuotation);
+        sendMessage("+56987381235", message)
     }
 
     return (
