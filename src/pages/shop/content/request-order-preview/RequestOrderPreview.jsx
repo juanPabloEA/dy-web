@@ -18,7 +18,7 @@ export default function RequestOrderPreview() {
 
     function send() {
         let message = buildMsgByQuotation(currentQuotation);
-        sendMessage("+56987381235", message)
+        sendMessage("+56993175141", message)
     }
 
     return (
