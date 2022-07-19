@@ -15,9 +15,6 @@ const Navbar = () => {
           <img src={logo} alt=""></img>
         </Link>
       </div>
-      <div className="Navbar-options">
-          <FaAlignRight onClick={activeMenu}/>
-      </div>
     </div>
   );
 }

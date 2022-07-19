@@ -9,8 +9,8 @@
 @media (max-width: 8000px) {
     .Navbar-container .Navbar-icon {
         display: inline-flex;
-        flex-grow:2;
-        justify-content: left;
+        flex-grow: 1;
+        justify-content: center;
     }
     .Navbar-container .Navbar-icon a {
         display: flex;

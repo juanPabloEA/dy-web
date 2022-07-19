@@ -1,18 +1,17 @@
 {
   "hosting": {
-    "public": "./build",
+    "public": "t brancbuild",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "./build/index.html"
-      }
-    ]
-  }
+        {
+            "source": "**",
+            "destination": "/index.html"
+        }
+    ]  }
 }
 
 
