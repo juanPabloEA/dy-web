@@ -6,7 +6,7 @@ import InpSelect from './../../../../components/utils/inp-select/InpSelect.jsx'
 
 
 import { getUser } from './../../../../store/shop/shop.selector.jsx'
-import { setUser, setDelivery, setPhone, setAddress, setComments } from './../../../../store/shop/shop.slice.jsx'
+import { setUser, setDelivery, setPhone, setAddress, setComments, setOrderDate } from './../../../../store/shop/shop.slice.jsx'
 
 export default function UserInformation () {
     const dispatch = useDispatch()
@@ -28,6 +28,9 @@ export default function UserInformation () {
     const handleOnChangeComments = (value) => {
         dispatch(setComments(value.target.value))
     }
+    const handleOnChangeOrderDate = (value) => {
+        dispatch(setOrderDate(value.target.value))
+    }
    return (
         <div className="UserForm">
             <div className="name">
@@ -35,6 +38,9 @@ export default function UserInformation () {
             </div>
             <div className="phone">
                 <UserPhone phone={user.phone} handleOnChange={handleOnChangePhone}/>
+            </div>
+            <div className="orderDate">
+                <UserOrderDate orderDate={user.orderDate} handleOnChange={handleOnChangeOrderDate}/>
             </div>
             <div className="delivery">
                 <UserDelivery delivery={user.delivery} handleOnChange={handleOnChangeDelivery}/>
@@ -84,6 +90,15 @@ function UserAddress({address, handleOnChange}) {
             <input type="text" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" placeholder="Jose Zapiola #1970" value={address} onChange={handleOnChange}/>
         </div> 
        
+    )
+}
+
+function UserOrderDate({orderDate, handleOnChange}) {
+    return (
+        <div className="label">
+            <div>Fecha de encargo: </div>
+            <input type="date" id="orderDate" name="orderDate" value={orderDate} onChange={handleOnChange}/>
+        </div>
     )
 }
 

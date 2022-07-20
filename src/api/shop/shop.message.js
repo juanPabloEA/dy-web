@@ -17,6 +17,7 @@ function getUserFormater(user) {
     let userformat = [
         `Nombre: ${user.name}`,
         `Número: ${user.phone}`,
+        `Fecha de entrega: ${formatDate(new Date(user.orderDate))}`,
         `Comentarios: ${user.comments}`,
     ]
 
@@ -25,4 +26,17 @@ function getUserFormater(user) {
     }
 
     return userformat.map(user => `\r ` + user).join(`\r\n\r\n`);
+}
+
+
+function padTo2Digits(num) {
+  return num.toString().padStart(2, '0');
+}
+
+function formatDate(date) {
+  return [
+    padTo2Digits(date.getDate()),
+    padTo2Digits(date.getMonth() + 1),
+    date.getFullYear(),
+  ].join('/');
 }

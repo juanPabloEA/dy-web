@@ -9,6 +9,7 @@ import { NEXT_PAGE,
   SET_DELIVERY,
   SET_ADDRESS,
   SET_COMMENTS, 
+  SET_ORDER_DATE
 } from './shop.actions.jsx'
 import { getCakeInitConfig } from '../../api/shop/cake.server.js'
 
@@ -32,7 +33,8 @@ const shop = createSlice({
       user:{
         name: "",
         phone: "",
-        delivery: false, 
+        delivery: false,
+        orderDate: "",
         address: "",
         comments: "",
       }
@@ -49,6 +51,7 @@ const shop = createSlice({
     setDelivery: SET_DELIVERY,
     setAddress: SET_ADDRESS,
     setComments: SET_COMMENTS,
+    setOrderDate: SET_ORDER_DATE
   }
   })
 
@@ -62,6 +65,7 @@ export const { configureDisableOption,
   setDelivery,
   setAddress,
   setComments,
+  setOrderDate
 }  = shop.actions 
 
 export default shop.reducer;

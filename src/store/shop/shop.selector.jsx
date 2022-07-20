@@ -55,8 +55,9 @@ export const disableNextPage = (state) => {
     case 4: {
       let nameIsEmpty = state.shop.form.user.name.length === 0;
       let phoneIsValid = state.shop.form.user.phone.length > 0 && state.shop.form.user.phone.length > 11;
-
-      disable = nameIsEmpty || !phoneIsValid;
+      let orderDateIsEmpty = state.shop.form.user.orderDate.length === 0;
+      
+      disable = nameIsEmpty || !phoneIsValid || orderDateIsEmpty;
       break;
     }
     default: {

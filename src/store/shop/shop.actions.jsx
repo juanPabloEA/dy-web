@@ -55,3 +55,7 @@ export const SET_ADDRESS = (state, params) => {
 export const SET_COMMENTS = (state, params) => {
   state.form.user.comments = params.payload
 }
+
+export const SET_ORDER_DATE = (state, params) => {
+  state.form.user.orderDate = params.payload
+}

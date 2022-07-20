@@ -40,6 +40,13 @@
     font-size: initial;
     padding-left: 10px;
 }
+
+.UserForm .label input#orderDate {
+    height: 30px;
+    width: 170px;
+    margin: auto;
+}
+
 .UserForm .label input:focus-visible, textarea:focus-visible {
     outline: #bc318f 2px solid;
 }
