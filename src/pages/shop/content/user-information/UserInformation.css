@@ -43,3 +43,11 @@
 .UserForm .label input:focus-visible, textarea:focus-visible {
     outline: #bc318f 2px solid;
 }
+
+.UserForm .label input::-webkit-input-placeholder {
+     opacity: 0.3; /*Change the opacity between 0 and 1*/
+}
+
+.UserForm .label textarea::-webkit-input-placeholder {
+     opacity: 0.3; /*Change the opacity between 0 and 1*/
+}

@@ -27,3 +27,43 @@ export const getCurrentQuotation = (state) => {
     user: state.shop.form.user
   }
 }
+
+export const disableNextPage = (state) => {
+  let disable = true;
+  
+  switch(state.shop.page.currentSelect) {
+    case 0: {
+      let countCheckedOption = state.shop.data[0].content.options.filter(data => data.checked).length
+      disable = countCheckedOption < state.shop.page.cakeSizePick; 
+      break;
+    }
+    case 1: {
+      let countCheckedOption = state.shop.data[1].content.options.filter(data => data.checked).length
+      disable = countCheckedOption < state.shop.page.cakeBizPick; 
+      break;
+    }
+    case 2: {
+      let countCheckedOption = state.shop.data[2].content.options.filter(data => data.checked).length
+      disable = countCheckedOption < state.shop.page.cakeCoverPick;
+      break;
+    }
+    case 3: {
+      let countCheckedOption = state.shop.data[3].content.options.filter(data => data.checked).length
+      disable = countCheckedOption === 0; 
+      break;
+    }
+    case 4: {
+      let nameIsEmpty = state.shop.form.user.name.length === 0;
+      let phoneIsValid = state.shop.form.user.phone.length > 0 && state.shop.form.user.phone.length > 11;
+
+      disable = nameIsEmpty || !phoneIsValid;
+      break;
+    }
+    default: {
+      disable = false;
+      break;
+    }
+  }
+
+  return disable;
+} 

@@ -4,14 +4,15 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import Content from "./content/Content.jsx"
 import { useSelector,  useDispatch} from 'react-redux'
 import { nextPage, previusPage, setMinAndMaxPage } from '../../store/shop/shop.slice.jsx'
-import { getShop, getCurrentSelectShop } from '../../store/shop/shop.selector.jsx'
+import { getShop, getCurrentSelectShop, disableNextPage } from '../../store/shop/shop.selector.jsx'
 
 
 export default function Shop() {
     const dispatch = useDispatch()
     const shopConf = useSelector(getShop)
     const currentShopOption = useSelector(getCurrentSelectShop)
-
+    const disNextPage = useSelector(disableNextPage)
+    
     const handleNextPage = () => {
         dispatch(nextPage())
         dispatch(setMinAndMaxPage())
@@ -42,9 +43,9 @@ export default function Shop() {
                 <div className="page">
                     {shopConf.page.currentSelect + 1}/{shopConf.page.number}
                 </div>
-                <div className="next" disabled={shopConf.page.maxPage}>
+                <div className="next" disabled={shopConf.page.maxPage || disNextPage}>
                     <div className="text"
-                        onClick={shopConf.page.maxPage ? undefined : handleNextPage}>
+                        onClick={shopConf.page.maxPage || disNextPage ? undefined : handleNextPage}>
                         Siguiente
                         <FaAngleRight />
                     </div>

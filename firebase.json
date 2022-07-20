@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "t brancbuild",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
