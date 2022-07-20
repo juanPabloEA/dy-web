@@ -16,7 +16,7 @@ const Contact = () => {
                         <a className="btn btn-whatsapp" target="_blank" rel="noreferrer noopener" href="https://wa.link/f1eni6"> <FaWhatsapp /> </a>
                     </div>
                     <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
-                        <a className="btn btn-facebook" target="_blank" rel="noreferrer noopener" href="https://es-la.facebook.com/deliciasdelayoya/"><FaFacebook /></a>
+                        <a className="btn btn-facebook" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/deliciasdelayoya.tortascaseras"><FaFacebook /></a>
                     </div>
                     <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
                         <a className="btn btn-instagram" target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/deliciasdelayoya/"> <FaInstagram /></a>
