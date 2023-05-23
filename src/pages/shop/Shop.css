@@ -12,17 +12,15 @@
 }
 
 .Shop .title {
-    text-align: center; 
+    text-align: center;
     font-size: 40px;
     padding: 15px;
     border-radius: 0px 0px 2px 2px;
-    border-bottom: 3px solid white;
 }
 
 .Shop .actions {
     display: grid;
     border-radius: 2px 2px 0px 0px;
-    border-top: 3px solid white;
     grid-template-columns: repeat(3, 1fr);
     padding: 15px;
 }
@@ -36,7 +34,7 @@
 .Shop .actions .next {
     display: grid;
     justify-content: end;
-    align-items: flex-end;
+    vertical-align: middle;
 }
 
 .Shop .actions .next[disabled] {
@@ -46,7 +44,7 @@
 .Shop .actions .back {
     display: grid;
     justify-content: start;
-    align-items: flex-start;
+    vertical-align: middle;
 }
 
 
@@ -58,4 +56,68 @@
     height: 440px;
     padding: 20px;
     overflow: auto;
+}
+
+.next-button {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: #d9317a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.next-button:hover {
+    opacity: 0.8;
+}
+
+.next-button .arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back-button {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: #d9317a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+}
+
+.back-button .arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

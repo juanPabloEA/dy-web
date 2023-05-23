@@ -97,7 +97,7 @@ function UserOrderDate({orderDate, handleOnChange}) {
     return (
         <div className="label">
             <div>Fecha de encargo: </div>
-            <input type="date" id="orderDate" name="orderDate" value={orderDate} onChange={handleOnChange}/>
+            <input type="date" id="orderDate" pattern="\d{4}-\d{2}-\d{2}"  name="orderDate" value={orderDate} onChange={handleOnChange}/>
         </div>
     )
 }

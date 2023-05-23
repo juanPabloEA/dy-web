@@ -2,6 +2,7 @@ import React from 'react'
 import CakeOptions from "./cake-options/CakeOptions.jsx"
 import UserInformation from './user-information/UserInformation.jsx'
 import RequestOrderPreview from './request-order-preview/RequestOrderPreview.jsx'
+import CakeSize from './cake-size/CakeSize.jsx'
 export default class Content extends React.Component {
     
     constructor(props) {
@@ -12,7 +13,7 @@ export default class Content extends React.Component {
     getContentByCurrentPage() { 
             switch(this.props?.options?.id) {
             case 0:
-                return <CakeOptions maxSelect={1} opt={this.props.options}/> 
+                return <CakeSize opt={this.props.options}/> 
 
             case 1:
                 return <CakeOptions maxSelect={1} opt={this.props.options}/> 

@@ -25,29 +25,24 @@ export default function Shop() {
    
     return (
         <div className="Shop">
-            <div className="title">
-                {currentShopOption?.title}
-            </div>
+           
             <div className="content">
                 <Content options={currentShopOption}/> 
-
             </div>
             <div className="actions">
                 <div className="back" disabled={shopConf.page.minPage}>
-                    <div className="text" 
+                    <div className="text back-button" 
                         onClick={shopConf.page.minPage ? undefined : handlePreviusPage}>
-                        <FaAngleLeft />
-                        Atrás
+                            <span class="arrow"></span>
                     </div>
                 </div>
-                <div className="page">
-                    {shopConf.page.currentSelect + 1}/{shopConf.page.number}
+                <div className="title">
+                    {currentShopOption?.title}
                 </div>
                 <div className="next" disabled={shopConf.page.maxPage || disNextPage}>
-                    <div className="text"
+                    <div className="text next-button"
                         onClick={shopConf.page.maxPage || disNextPage ? undefined : handleNextPage}>
-                        Siguiente
-                        <FaAngleRight />
+                            <span class="arrow"></span>
                     </div>
                 </div>
             </div>
