@@ -1,7 +1,8 @@
 import React from 'react';
 import './Shop.css';
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-import Content from "./content/Content.jsx"
+import { FaAngleDown, FaAngleUp, FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import CakeMaker from './content/cake-maker/CakeMaker.jsx'
+import Content from './content/Content';
 import { useSelector,  useDispatch} from 'react-redux'
 import { nextPage, previusPage, setMinAndMaxPage } from '../../store/shop/shop.slice.jsx'
 import { getShop, getCurrentSelectShop, disableNextPage } from '../../store/shop/shop.selector.jsx'
@@ -27,23 +28,36 @@ export default function Shop() {
         <div className="Shop">
            
             <div className="content">
-                <Content options={currentShopOption}/> 
+                <CakeMaker opt={currentShopOption}/>
+                <div className="title">
+                    {currentShopOption?.title}
+                </div>
+            </div>
+             <div className="options-up">
+                    <div className="shop-options-up-icon">
+                        <FaAngleUp />
+                    </div>
             </div>
             <div className="actions">
                 <div className="back" disabled={shopConf.page.minPage}>
                     <div className="text back-button" 
                         onClick={shopConf.page.minPage ? undefined : handlePreviusPage}>
-                            <span class="arrow"></span>
+                            <FaAngleLeft />
                     </div>
                 </div>
-                <div className="title">
-                    {currentShopOption?.title}
+                <div className="shop-options">
+                    <Content/>
                 </div>
                 <div className="next" disabled={shopConf.page.maxPage || disNextPage}>
                     <div className="text next-button"
                         onClick={shopConf.page.maxPage || disNextPage ? undefined : handleNextPage}>
-                            <span class="arrow"></span>
+                            <FaAngleRight />
                     </div>
+                </div>
+            </div>
+            <div className="options-down">
+                <div className="shop-options-down-icon">
+                        <FaAngleDown />
                 </div>
             </div>
         </div>

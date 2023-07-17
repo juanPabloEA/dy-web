@@ -41,6 +41,28 @@
     opacity: 0.5;
 }
 
+.Shop .actions .shop-options {
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+
+
+.Shop .options-up {
+    color: antiquewhite;
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.Shop .options-down {
+    color: antiquewhite;
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
+}
+
 .Shop .actions .back {
     display: grid;
     justify-content: start;
