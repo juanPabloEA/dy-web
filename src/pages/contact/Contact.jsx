@@ -9,7 +9,7 @@ const Contact = () => {
             <div className="contact-page">
                 <div className="head">
                     <div className="title">Contactanos</div>
-                    <div className="sub-title">Si deseas ver más de nuestro trabajo o contactarte con nosotros accede a nuestras redes sociales</div>
+                    <div className="sub-title">¡Estamos aquí para ti! Si tienes preguntas o comentarios sobre nuestras deliciosas tortas, no dudes en contactarnos. Tu satisfacción es nuestra prioridad y esperamos poder ayudarte en todo lo que necesites</div>
                 </div>
                 <div className="links">
                     <div className="item-a animate__animated animate__pulse animate__infinite animate__slow">
